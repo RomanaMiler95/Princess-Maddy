@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function DeftformEmbed() {
   useEffect(() => {
-    // Ubacuje Deftform skriptu ako već nije ubačena
+    // Dodaj Deftform skriptu
     const existingScript = document.querySelector(
       'script[src="https://cdn.deftform.com/embed.js"]'
     );
@@ -13,9 +13,10 @@ export default function DeftformEmbed() {
       document.body.appendChild(script);
     }
 
-    // ➕ Ovdje ubacujemo naš custom CSS u head
+    // Dodaj custom stilove
     const styleTag = document.createElement("style");
     styleTag.innerHTML = `
+      /* Opći stilovi */
       .deftform input, 
       .deftform select, 
       .deftform label, 
@@ -41,6 +42,16 @@ export default function DeftformEmbed() {
         display: none !important;
       }
 
+      /* Ukloni bijelu pozadinu i shadow - forma i success poruka */
+      .deftform > div,
+      .deftform > div > div,
+      .deftform .success,
+      .deftform .success > div {
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      /* Reponsivnost */
       .deftform .grid-cols-2 {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
       }
@@ -50,21 +61,28 @@ export default function DeftformEmbed() {
           grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         }
       }
-
-      .deftform > div,
-      .deftform > div > div {
-        background: transparent !important;
-        box-shadow: none !important;
-      }
     `;
     document.head.appendChild(styleTag);
 
-    // ➕ Uklanjamo default bijelu pozadinu i shadow kad se forma učita
+    // Riješi bijelu pozadinu nakon što forma učita
     const interval = setInterval(() => {
-      const formContainer = document.querySelector(".deftform > div");
-      if (formContainer) {
-        (formContainer as HTMLElement).style.background = "transparent";
-        (formContainer as HTMLElement).style.boxShadow = "none";
+      const wrapper = document.querySelector(".deftform > div");
+      if (wrapper) {
+        (wrapper as HTMLElement).style.background = "transparent";
+        (wrapper as HTMLElement).style.boxShadow = "none";
+      }
+
+      const inner = document.querySelector(".deftform > div > div");
+      if (inner) {
+        (inner as HTMLElement).style.background = "transparent";
+        (inner as HTMLElement).style.boxShadow = "none";
+      }
+
+      const success = document.querySelector(".deftform .success");
+      if (success) {
+        (success as HTMLElement).style.background = "transparent";
+        (success as HTMLElement).style.boxShadow = "none";
+        (success as HTMLElement).style.height = "auto";
         clearInterval(interval);
       }
     }, 500);
@@ -88,6 +106,7 @@ export default function DeftformEmbed() {
         style={{
           width: "100%",
           maxWidth: "100%",
+          overflow: "hidden", // ✨ važno za auto-height
         }}
       />
     </div>
