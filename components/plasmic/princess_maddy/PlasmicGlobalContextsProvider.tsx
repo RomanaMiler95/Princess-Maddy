@@ -15,6 +15,7 @@ export interface GlobalContextsProviderProps {
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
+
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;

@@ -61,7 +61,6 @@ import {
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Button from "../../Button"; // plasmic-import: bJNR9igOVaPK/component
-import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 
 import { useScreenVariants as useScreenVariantsrbjbd6IxmKjb } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: rbjbd6IxmKJB/globalVariant
 
@@ -142,7 +141,7 @@ export type PlasmicHome__OverridesType = {
   slike2?: Flex__<"div">;
   sadrzaj2?: Flex__<"div">;
   nekaIduciRodendanVasePrincezeBudeCaroban?: Flex__<"section">;
-  contactEmbed?: Flex__<typeof Embed>;
+  kontaktFormaSlot?: Flex__<"div">;
   footer?: Flex__<"section">;
   section?: Flex__<"section">;
 };
@@ -2631,16 +2630,12 @@ function PlasmicHome__RenderFunc(props: {
                   role={"img"}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__x1VaR)}>
-                <Embed
-                  data-plasmic-name={"contactEmbed"}
-                  data-plasmic-override={overrides.contactEmbed}
-                  className={classNames("__wab_instance", sty.contactEmbed)}
-                  code={
-                    '<div class="deftform" data-form-id="91cc4bd3-057c-496a-84a2-d8a6abe5e81e" data-form-width="100%" data-form-align="center" data-form-auto-height="1"></div><script src="https://cdn.deftform.com/embed.js"></script>'
-                  }
-                />
-              </div>
+              <div
+                data-plasmic-name={"kontaktFormaSlot"}
+                data-plasmic-override={overrides.kontaktFormaSlot}
+                className={classNames(projectcss.all, sty.kontaktFormaSlot)}
+              />
+
               <div className={classNames(projectcss.all, sty.column___1MIdi)}>
                 <Fairy2Svg2Icon
                   className={classNames(projectcss.all, sty.svg__iiuQz)}
@@ -2779,7 +2774,9 @@ function PlasmicHome__RenderFunc(props: {
                       sty.link__hKmXo
                     )}
                     component={Link}
-                    href={"https://www.facebook.com/share/16HpvQNQiQ/"}
+                    href={
+                      "https://www.instagram.com/princess____maddy?igsh=MW16NHV2cG01MDc1aA=="
+                    }
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -2795,9 +2792,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.link__vHNef
                     )}
                     component={Link}
-                    href={
-                      "https://www.instagram.com/princess____maddy?igsh=MW16NHV2cG01MDc1aA=="
-                    }
+                    href={"https://www.facebook.com/share/16HpvQNQiQ/"}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -2904,7 +2899,7 @@ const PlasmicDescendants = {
     "slike2",
     "sadrzaj2",
     "nekaIduciRodendanVasePrincezeBudeCaroban",
-    "contactEmbed",
+    "kontaktFormaSlot",
     "footer",
     "section"
   ],
@@ -3006,9 +3001,9 @@ const PlasmicDescendants = {
   sadrzaj2: ["sadrzaj2"],
   nekaIduciRodendanVasePrincezeBudeCaroban: [
     "nekaIduciRodendanVasePrincezeBudeCaroban",
-    "contactEmbed"
+    "kontaktFormaSlot"
   ],
-  contactEmbed: ["contactEmbed"],
+  kontaktFormaSlot: ["kontaktFormaSlot"],
   footer: ["footer", "section"],
   section: ["section"]
 } as const;
@@ -3062,7 +3057,7 @@ type NodeDefaultElementType = {
   slike2: "div";
   sadrzaj2: "div";
   nekaIduciRodendanVasePrincezeBudeCaroban: "section";
-  contactEmbed: typeof Embed;
+  kontaktFormaSlot: "div";
   footer: "section";
   section: "section";
 };
@@ -3180,7 +3175,7 @@ export const PlasmicHome = Object.assign(
     nekaIduciRodendanVasePrincezeBudeCaroban: makeNodeComponent(
       "nekaIduciRodendanVasePrincezeBudeCaroban"
     ),
-    contactEmbed: makeNodeComponent("contactEmbed"),
+    kontaktFormaSlot: makeNodeComponent("kontaktFormaSlot"),
     footer: makeNodeComponent("footer"),
     section: makeNodeComponent("section"),
 

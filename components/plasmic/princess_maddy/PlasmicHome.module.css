@@ -7521,7 +7521,7 @@
     display: none;
   }
 }
-.column__x1VaR {
+.kontaktFormaSlot {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -7533,17 +7533,6 @@
   overflow: visible;
   min-width: 0;
   padding: 0px;
-}
-.contactEmbed:global(.__wab_instance) {
-  object-fit: cover;
-  width: 1000px;
-  overflow: visible;
-}
-@media (min-width: 0px) and (max-width: 930px) {
-  .contactEmbed:global(.__wab_instance) {
-    width: 100%;
-    min-width: 0;
-  }
 }
 .column___1MIdi {
   display: flex;
