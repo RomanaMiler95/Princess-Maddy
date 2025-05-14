@@ -47,7 +47,7 @@ export default function DeftformEmbed() {
       .deftform > div > div,
       .deftform .success,
       .deftform .success > div {
-        background: transparent !important;
+        background: none !important;
         box-shadow: none !important;
       }
 
