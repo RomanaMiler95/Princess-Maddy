@@ -6,6 +6,7 @@ import GlobalContextsProvider from "../components/plasmic/princess_maddy/Plasmic
 import { ScheduleContext } from "../components/plasmic/princess_maddy/PlasmicGlobalVariant__Schedule";
 import { PlasmicHome } from "../components/plasmic/princess_maddy/PlasmicHome";
 import { useRouter } from "next/router";
+import DeftformEmbed from "../components/DeftformEmbed";
 
 function Home() {
   // Use PlasmicHome to render this component as it was
@@ -33,7 +34,12 @@ function Home() {
           params={useRouter()?.query}
           query={useRouter()?.query}
         >
-          <PlasmicHome />
+          <PlasmicHome
+            overrides={{
+            kontaktFormaSlot: <DeftformEmbed />
+            }}
+          />
+
         </PageParamsProvider__>
       </GlobalContextsProvider>
     </ScheduleContext.Provider>
