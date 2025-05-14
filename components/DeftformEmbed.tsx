@@ -47,12 +47,14 @@ export default function DeftformEmbed() {
       .deftform > div > div,
       .deftform .success,
       .deftform .success > div {
+        color-scheme: normal !important;
         background: none !important;
         background-color: none !important;
         box-shadow: none !important;
       }
 
       .deftform {
+        color-scheme: normal !important;
         background: none !important;
         background-color: none !important;
         box-shadow: none !important;
