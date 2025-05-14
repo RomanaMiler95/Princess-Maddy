@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 export default function DeftformEmbed() {
   useEffect(() => {
+    // Ubacuje Deftform skriptu ako već nije ubačena
     const existingScript = document.querySelector(
       'script[src="https://cdn.deftform.com/embed.js"]'
     );
@@ -12,7 +13,52 @@ export default function DeftformEmbed() {
       document.body.appendChild(script);
     }
 
-    // DODANO: pokušaj promijeniti stilove nakon što forma bude ubačena
+    // ➕ Ovdje ubacujemo naš custom CSS u head
+    const styleTag = document.createElement("style");
+    styleTag.innerHTML = `
+      .deftform input, 
+      .deftform select, 
+      .deftform label, 
+      .deftform button {
+        font-size: 18px !important;
+        border-radius: 10px !important;
+      }
+
+      .deftform .cs_button {
+        background-color: #EF5B94 !important;
+        color: white !important;
+        padding: 16px 28px !important;
+        border: none !important;
+        font-weight: 600 !important;
+      }
+
+      .deftform .cs_button:hover {
+        background-color: #427AC4 !important;
+      }
+
+      .deftform .text-xs, 
+      .deftform .grecaptcha-logo {
+        display: none !important;
+      }
+
+      .deftform .grid-cols-2 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .deftform .grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+      }
+
+      .deftform > div {
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+    `;
+    document.head.appendChild(styleTag);
+
+    // ➕ Uklanjamo default bijelu pozadinu i shadow kad se forma učita
     const interval = setInterval(() => {
       const formContainer = document.querySelector(".deftform > div");
       if (formContainer) {
