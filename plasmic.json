@@ -677,6 +677,11 @@
           "id": "pY9c0nhwq71X",
           "name": "Fairy2Svg2Icon",
           "moduleFilePath": "plasmic/princess_maddy/icons/PlasmicIcon__Fairy2Svg2.tsx"
+        },
+        {
+          "id": "TIFQAripOqvN",
+          "name": "TiktokSvgIcon",
+          "moduleFilePath": "plasmic/princess_maddy/icons/PlasmicIcon__TiktokSvg.tsx"
         }
       ],
       "images": [

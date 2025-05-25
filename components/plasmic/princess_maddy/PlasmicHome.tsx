@@ -81,6 +81,7 @@ import Fairy2Svg2Icon from "./icons/PlasmicIcon__Fairy2Svg2"; // plasmic-import:
 import Call24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon from "./icons/PlasmicIcon__Call24DpE8EaedFill1Wght400Grad0Opsz24Svg"; // plasmic-import: QlL3tTqfAw4N/icon
 import Mail24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon from "./icons/PlasmicIcon__Mail24DpE8EaedFill1Wght400Grad0Opsz24Svg"; // plasmic-import: RS4xpgiJxFif/icon
 import Instagram3SvgIcon from "./icons/PlasmicIcon__Instagram3Svg"; // plasmic-import: FenFes5YFI20/icon
+import TiktokSvgIcon from "./icons/PlasmicIcon__TiktokSvg"; // plasmic-import: TIFQAripOqvN/icon
 import Facebook3SvgIcon from "./icons/PlasmicIcon__Facebook3Svg"; // plasmic-import: RJ2yhi0BbV-9/icon
 
 createPlasmicElementProxy;
@@ -2782,6 +2783,22 @@ function PlasmicHome__RenderFunc(props: {
                   >
                     <Instagram3SvgIcon
                       className={classNames(projectcss.all, sty.svg__erNf9)}
+                      role={"img"}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__jqCif
+                    )}
+                    component={Link}
+                    href={"https://www.tiktok.com/@partyprincessmaddy"}
+                    platform={"nextjs"}
+                    target={"_blank"}
+                  >
+                    <TiktokSvgIcon
+                      className={classNames(projectcss.all, sty.svg__p9Ixt)}
                       role={"img"}
                     />
                   </PlasmicLink__>
