@@ -66,6 +66,11 @@ export default function DeftformEmbed() {
       }
       
       /* Kako ste culi za mene */
+      @media only screen and (max-width: 1023px) {
+        .grid-cols-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+      }
 
 }
 
