@@ -97,11 +97,12 @@ export const PlasmicHome__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHome__OverridesType = {
   root?: Flex__<"div">;
-  hero2?: Flex__<"section">;
+  hero?: Flex__<"section">;
   navigacija?: Flex__<typeof NavigationBar>;
   heroSadrzaj?: Flex__<"div">;
   textCta?: Flex__<"div">;
   h1?: Flex__<"h1">;
+  posaljiUpit?: Flex__<typeof Button>;
   slikaHero?: Flex__<"div">;
   djecjaZabavaUzMaloCarolije?: Flex__<"section">;
   sadrzaj?: Flex__<"div">;
@@ -250,9 +251,9 @@ function PlasmicHome__RenderFunc(props: {
           )}
         >
           <section
-            data-plasmic-name={"hero2"}
-            data-plasmic-override={overrides.hero2}
-            className={classNames(projectcss.all, sty.hero2)}
+            data-plasmic-name={"hero"}
+            data-plasmic-override={overrides.hero}
+            className={classNames(projectcss.all, sty.hero)}
           >
             <NavigationBar
               data-plasmic-name={"navigacija"}
@@ -323,17 +324,13 @@ function PlasmicHome__RenderFunc(props: {
               openButton={
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___4OMxM)}
+                  className={classNames(sty.img__aSgi1)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "40px"
-                      : "auto"
-                  }
+                  displayWidth={"auto"}
                   src={"https://static1.plasmic.app/menu.svg"}
                 />
               }
@@ -378,7 +375,9 @@ function PlasmicHome__RenderFunc(props: {
                     : "Tra\u017eite savr\u0161enu zabavu za svoju djevoj\u010dicu koja \nsanja o tome da bude ledena princeza ili sirena? \nTu sam da ostvarim njezine snove!"}
                 </div>
                 <Button
-                  className={classNames("__wab_instance", sty.button__nGAv7)}
+                  data-plasmic-name={"posaljiUpit"}
+                  data-plasmic-override={overrides.posaljiUpit}
+                  className={classNames("__wab_instance", sty.posaljiUpit)}
                   endIcon={
                     <ArrowForwardIos24DpE8EaedFill0Wght400Grad0Opsz24SvgIcon
                       className={classNames(projectcss.all, sty.svg___3OytF)}
@@ -415,7 +414,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"auto"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageHeroElsaWebp.webp",
+                    src: "/plasmic/princess_maddy/images/imageHeroElsaNewWebp.webp",
                     fullWidth: 1400,
                     fullHeight: 1331,
                     aspectRatio: undefined
@@ -791,9 +790,9 @@ function PlasmicHome__RenderFunc(props: {
                   }
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageTemaElsa2Webp.webp",
-                    fullWidth: 3072,
-                    fullHeight: 4080,
+                    src: "/plasmic/princess_maddy/images/imageTemaElsa6Webp.webp",
+                    fullWidth: 963,
+                    fullHeight: 950,
                     aspectRatio: undefined
                   }}
                 />
@@ -1206,7 +1205,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"+0,45\u20ac"}
+                    {"+0,65\u20ac"}
                   </span>
                   <React.Fragment> </React.Fragment>
                   <span
@@ -2231,9 +2230,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage10Webp.webp",
-                    fullWidth: 1333,
-                    fullHeight: 2000,
+                    src: "/plasmic/princess_maddy/images/galerijaImage11Webp.webp",
+                    fullWidth: 1350,
+                    fullHeight: 1800,
                     aspectRatio: undefined
                   }}
                 />
@@ -2384,9 +2383,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage8Webp.webp",
-                    fullWidth: 1500,
-                    fullHeight: 2000,
+                    src: "/plasmic/princess_maddy/images/galerijaImage12Webp.webp",
+                    fullWidth: 1350,
+                    fullHeight: 1800,
                     aspectRatio: undefined
                   }}
                 />
@@ -2871,11 +2870,12 @@ function PlasmicHome__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "hero2",
+    "hero",
     "navigacija",
     "heroSadrzaj",
     "textCta",
     "h1",
+    "posaljiUpit",
     "slikaHero",
     "djecjaZabavaUzMaloCarolije",
     "sadrzaj",
@@ -2920,11 +2920,20 @@ const PlasmicDescendants = {
     "footer",
     "section"
   ],
-  hero2: ["hero2", "navigacija", "heroSadrzaj", "textCta", "h1", "slikaHero"],
+  hero: [
+    "hero",
+    "navigacija",
+    "heroSadrzaj",
+    "textCta",
+    "h1",
+    "posaljiUpit",
+    "slikaHero"
+  ],
   navigacija: ["navigacija"],
-  heroSadrzaj: ["heroSadrzaj", "textCta", "h1", "slikaHero"],
-  textCta: ["textCta", "h1"],
+  heroSadrzaj: ["heroSadrzaj", "textCta", "h1", "posaljiUpit", "slikaHero"],
+  textCta: ["textCta", "h1", "posaljiUpit"],
   h1: ["h1"],
+  posaljiUpit: ["posaljiUpit"],
   slikaHero: ["slikaHero"],
   djecjaZabavaUzMaloCarolije: [
     "djecjaZabavaUzMaloCarolije",
@@ -3029,11 +3038,12 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  hero2: "section";
+  hero: "section";
   navigacija: typeof NavigationBar;
   heroSadrzaj: "div";
   textCta: "div";
   h1: "h1";
+  posaljiUpit: typeof Button;
   slikaHero: "div";
   djecjaZabavaUzMaloCarolije: "section";
   sadrzaj: "div";
@@ -3139,11 +3149,12 @@ export const PlasmicHome = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    hero2: makeNodeComponent("hero2"),
+    hero: makeNodeComponent("hero"),
     navigacija: makeNodeComponent("navigacija"),
     heroSadrzaj: makeNodeComponent("heroSadrzaj"),
     textCta: makeNodeComponent("textCta"),
     h1: makeNodeComponent("h1"),
+    posaljiUpit: makeNodeComponent("posaljiUpit"),
     slikaHero: makeNodeComponent("slikaHero"),
     djecjaZabavaUzMaloCarolije: makeNodeComponent("djecjaZabavaUzMaloCarolije"),
     sadrzaj: makeNodeComponent("sadrzaj"),

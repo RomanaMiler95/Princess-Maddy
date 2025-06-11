@@ -419,8 +419,7 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -478,8 +477,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -501,8 +499,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -524,8 +521,7 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": [],
-      "jsBundleThemes": []
+      "customFunctions": []
     },
     {
       "projectId": "cYtFYdVtykXpyPSmJwBtNk",
@@ -884,6 +880,41 @@
           "id": "UNSq79jXtj9G",
           "name": "image-princess-collage2.webp",
           "filePath": "../public/plasmic/princess_maddy/images/imagePrincessCollage2Webp.webp"
+        },
+        {
+          "id": "73wutvDJprTq",
+          "name": "image-hero-elsa-new.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageHeroElsaNewWebp.webp"
+        },
+        {
+          "id": "UMMADQWEfSy7",
+          "name": "image-tema-elsa-3.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaElsa3Webp.webp"
+        },
+        {
+          "id": "H_iCVXNgHk-n",
+          "name": "image-tema-elsa-4.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaElsa4Webp.webp"
+        },
+        {
+          "id": "97dy4Q_N4IPm",
+          "name": "image-tema-elsa-5.jpg",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaElsa5Jpg.jpg"
+        },
+        {
+          "id": "vFe_JrvhxBbW",
+          "name": "image-tema-elsa-6.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaElsa6Webp.webp"
+        },
+        {
+          "id": "qLB9R_jfHxzU",
+          "name": "galerija-image-11.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/galerijaImage11Webp.webp"
+        },
+        {
+          "id": "rlKYKYsNU6Mj",
+          "name": "galerija-image-12.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/galerijaImage12Webp.webp"
         }
       ],
       "indirect": false,

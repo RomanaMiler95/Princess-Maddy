@@ -36,7 +36,7 @@
     grid-column: 4;
   }
 }
-.hero2 {
+.hero {
   display: grid;
   position: relative;
   align-content: flex-start;
@@ -59,16 +59,16 @@
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
   padding: 0px 0px 130px;
 }
-.hero2 > * {
+.hero > * {
   grid-column: 4;
 }
 @media (min-width: 0px) and (max-width: 930px) {
-  .hero2 {
+  .hero {
     padding: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 930px) {
-  .hero2 > * {
+  .hero > * {
     grid-column: 4;
   }
 }
@@ -125,16 +125,11 @@
     height: 70px;
   }
 }
-.img___4OMxM {
+.img__aSgi1 {
   object-fit: cover;
 }
-.img___4OMxM > picture > img {
+.img__aSgi1 > picture > img {
   object-fit: cover;
-}
-@media (min-width: 0px) and (max-width: 930px) {
-  .img___4OMxM {
-    width: 40px;
-  }
 }
 .img__pTaFf {
   object-fit: cover;
@@ -298,7 +293,7 @@
     padding: 0px 0px 32px;
   }
 }
-.button__nGAv7:global(.__wab_instance) {
+.posaljiUpit:global(.__wab_instance) {
   max-width: 100%;
   z-index: 10;
 }
@@ -6876,18 +6871,18 @@
 }
 .img__puPW {
   position: relative;
-  object-fit: cover;
-  max-width: 100%;
-  width: 100%;
   height: 400px;
-  object-position: 50% -78px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: 50% -57px;
   min-width: 0;
   flex-shrink: 0;
   border-radius: 30px;
 }
 .img__puPW > picture > img {
   object-fit: cover;
-  object-position: 50% -78px;
+  object-position: 50% -57px;
 }
 @media (max-width: 1919px) {
   .img__puPW {
