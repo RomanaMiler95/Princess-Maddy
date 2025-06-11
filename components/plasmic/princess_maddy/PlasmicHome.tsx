@@ -427,10 +427,16 @@ function PlasmicHome__RenderFunc(props: {
               className={classNames(sty.img__vqBp3)}
               displayHeight={"auto"}
               displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
+              displayMaxWidth={
+                hasVariant(globalVariants, "screen", "mobile") ? "500%" : "100%"
+              }
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"100%"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? "800px"
+                  : "100%"
+              }
               loading={"lazy"}
               src={{
                 src: "/plasmic/princess_maddy/images/cloudsWebp.webp",
@@ -1174,7 +1180,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"+0,45\u20ac"}
+                    {"+0,65\u20ac"}
                   </span>
                   <React.Fragment> </React.Fragment>
                   <span

@@ -372,6 +372,14 @@
     margin-bottom: -187px;
   }
 }
+@media (min-width: 0px) and (max-width: 930px) {
+  .img__vqBp3 {
+    margin-bottom: -60px;
+    width: 800px;
+    max-width: 500%;
+    margin-left: -114px;
+  }
+}
 .djecjaZabavaUzMaloCarolije {
   display: grid;
   position: relative;
