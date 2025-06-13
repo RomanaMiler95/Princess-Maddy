@@ -145,6 +145,8 @@ export type PlasmicHome__OverridesType = {
   nekaIduciRodendanVasePrincezeBudeCaroban?: Flex__<"section">;
   kontaktFormaSlot?: Flex__<"div">;
   footer?: Flex__<"section">;
+  impressum?: Flex__<"a"> & Partial<LinkProps>;
+  politikaPrivatnosti?: Flex__<"a"> & Partial<LinkProps>;
   section?: Flex__<"section">;
 };
 
@@ -798,7 +800,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={
                     hasVariant(globalVariants, "screen", "smallDesktop")
                       ? "100%"
-                      : "100%"
+                      : "350px"
                   }
                   loading={"lazy"}
                   src={{
@@ -821,7 +823,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__tj87K
                   )}
                 >
-                  {"Elsa"}
+                  {"Ledena Kraljica"}
                 </div>
               </div>
               <div
@@ -843,7 +845,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaTrnoruzica4Webp.webp",
@@ -865,7 +871,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__whn4G
                   )}
                 >
-                  {"Zlatokosa"}
+                  {"Matovilka"}
                 </div>
               </div>
               <div
@@ -887,7 +893,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaSnjeguljicaWebp.webp",
@@ -909,7 +919,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__ayeO
                   )}
                 >
-                  {"Snjeguljica"}
+                  {"Snje\u017ena princeza"}
                 </div>
               </div>
               <div
@@ -931,7 +941,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaArielWebp.webp",
@@ -953,7 +967,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__ltexr
                   )}
                 >
-                  {"Ariel"}
+                  {"Sirena"}
                 </div>
               </div>
             </Stack__>
@@ -983,7 +997,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaZvoncicaWebp.webp",
@@ -1005,7 +1023,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__lHlYg
                   )}
                 >
-                  {"Zvon\u010dica"}
+                  {"Vila"}
                 </div>
               </div>
               <div
@@ -1027,7 +1045,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={"350px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaBarbieWebp2.webp",
@@ -1071,7 +1089,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageJednorogWebp.webp",
@@ -1115,7 +1137,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"100%"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/princess_maddy/images/imageTemaHermioneWebp.webp",
@@ -2677,7 +2703,9 @@ function PlasmicHome__RenderFunc(props: {
                       ? "50%"
                       : hasVariant(globalVariants, "screen", "tablet")
                       ? "100%"
-                      : "80%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "80%"
+                      : "90%"
                   }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
@@ -2764,6 +2792,52 @@ function PlasmicHome__RenderFunc(props: {
                 </Stack__>
               </div>
               <div className={classNames(projectcss.all, sty.column__uqlZg)}>
+                <h4
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h4,
+                    projectcss.__wab_text,
+                    sty.h4__cXAg6
+                  )}
+                >
+                  {"Stranice"}
+                </h4>
+                <PlasmicLink__
+                  data-plasmic-name={"impressum"}
+                  data-plasmic-override={overrides.impressum}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.impressum
+                  )}
+                  component={Link}
+                  href={`/impressum`}
+                  platform={"nextjs"}
+                >
+                  {hasVariant(globalVariants, "screen", "smallDesktop")
+                    ? "Impressum"
+                    : "Impressum"}
+                </PlasmicLink__>
+                <PlasmicLink__
+                  data-plasmic-name={"politikaPrivatnosti"}
+                  data-plasmic-override={overrides.politikaPrivatnosti}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.politikaPrivatnosti
+                  )}
+                  component={Link}
+                  href={`/politika-privatnosti`}
+                  platform={"nextjs"}
+                >
+                  {hasVariant(globalVariants, "screen", "smallDesktop")
+                    ? "Politika privatnosti"
+                    : "Politika privatnosti"}
+                </PlasmicLink__>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__xi7Cr)}>
                 <h4
                   className={classNames(
                     projectcss.all,
@@ -2930,6 +3004,8 @@ const PlasmicDescendants = {
     "nekaIduciRodendanVasePrincezeBudeCaroban",
     "kontaktFormaSlot",
     "footer",
+    "impressum",
+    "politikaPrivatnosti",
     "section"
   ],
   hero: [
@@ -3042,7 +3118,9 @@ const PlasmicDescendants = {
     "kontaktFormaSlot"
   ],
   kontaktFormaSlot: ["kontaktFormaSlot"],
-  footer: ["footer", "section"],
+  footer: ["footer", "impressum", "politikaPrivatnosti", "section"],
+  impressum: ["impressum"],
+  politikaPrivatnosti: ["politikaPrivatnosti"],
   section: ["section"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -3098,6 +3176,8 @@ type NodeDefaultElementType = {
   nekaIduciRodendanVasePrincezeBudeCaroban: "section";
   kontaktFormaSlot: "div";
   footer: "section";
+  impressum: "a";
+  politikaPrivatnosti: "a";
   section: "section";
 };
 
@@ -3217,6 +3297,8 @@ export const PlasmicHome = Object.assign(
     ),
     kontaktFormaSlot: makeNodeComponent("kontaktFormaSlot"),
     footer: makeNodeComponent("footer"),
+    impressum: makeNodeComponent("impressum"),
+    politikaPrivatnosti: makeNodeComponent("politikaPrivatnosti"),
     section: makeNodeComponent("section"),
 
     // Metadata about props expected for PlasmicHome

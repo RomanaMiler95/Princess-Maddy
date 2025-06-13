@@ -60,6 +60,7 @@
   --mixin-pNCgWMdsKq7-_font-family: "Quando", serif;
   --mixin-pNCgWMdsKq7-_white-space: pre-wrap;
   --mixin-sb3D3aThZv6r_color: var(--token-wi1nXb9Tvqrn);
+  --mixin-sb3D3aThZv6r_font-weight: 600;
   --mixin-sb3D3aThZv6r_white-space: pre-wrap;
   --mixin-acFq9m5mziAC_color: #f575a6;
   --mixin-acFq9m5mziAC_font-size: 39px;
@@ -554,6 +555,7 @@ a:where(.root_reset.a),
 :where(.root_reset_tags) a,
 a:where(.root_reset_tags) {
   color: var(--mixin-sb3D3aThZv6r_color);
+  font-weight: var(--mixin-sb3D3aThZv6r_font-weight);
 }
 
 :where(.root_reset) h3:where(.h3),

@@ -419,7 +419,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -477,7 +478,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -499,7 +501,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -521,7 +524,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "cYtFYdVtykXpyPSmJwBtNk",
@@ -571,6 +575,20 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/impressum"
+        },
+        {
+          "id": "OFtkLZGGIYrt",
+          "name": "PolitikaPrivatnosti",
+          "type": "managed",
+          "projectId": "cYtFYdVtykXpyPSmJwBtNk",
+          "renderModuleFilePath": "plasmic/princess_maddy/PlasmicPolitikaPrivatnosti.tsx",
+          "importSpec": {
+            "modulePath": "../pages/politika-privatnosti.tsx"
+          },
+          "cssFilePath": "plasmic/princess_maddy/PlasmicPolitikaPrivatnosti.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/politika-privatnosti"
         }
       ],
       "icons": [
