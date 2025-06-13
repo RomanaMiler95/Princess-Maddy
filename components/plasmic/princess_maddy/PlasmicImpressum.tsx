@@ -72,6 +72,7 @@ import sty from "./PlasmicImpressum.module.css"; // plasmic-import: mniyWgBlKijO
 import Call24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon from "./icons/PlasmicIcon__Call24DpE8EaedFill1Wght400Grad0Opsz24Svg"; // plasmic-import: QlL3tTqfAw4N/icon
 import Mail24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon from "./icons/PlasmicIcon__Mail24DpE8EaedFill1Wght400Grad0Opsz24Svg"; // plasmic-import: RS4xpgiJxFif/icon
 import Instagram3SvgIcon from "./icons/PlasmicIcon__Instagram3Svg"; // plasmic-import: FenFes5YFI20/icon
+import TiktokSvgIcon from "./icons/PlasmicIcon__TiktokSvg"; // plasmic-import: TIFQAripOqvN/icon
 import Facebook3SvgIcon from "./icons/PlasmicIcon__Facebook3Svg"; // plasmic-import: RJ2yhi0BbV-9/icon
 
 createPlasmicElementProxy;
@@ -226,7 +227,7 @@ function PlasmicImpressum__RenderFunc(props: {
                   sty.link__vZ6AR
                 )}
                 component={Link}
-                href={"#contact"}
+                href={"animatorica-princess-maddy.com/#contact"}
                 platform={"nextjs"}
               >
                 {"Kontakt"}
@@ -331,6 +332,13 @@ function PlasmicImpressum__RenderFunc(props: {
                   className={"plasmic_default__all plasmic_default__span"}
                   style={{ fontWeight: 700 }}
                 >
+                  {"IBAN:\u00a0"}
+                </span>
+                <React.Fragment>{"\nHR2723600001103041883\n\n"}</React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700 }}
+                >
                   {"Oblik poslovanja:"}
                 </span>
                 <React.Fragment>
@@ -378,12 +386,12 @@ function PlasmicImpressum__RenderFunc(props: {
             <Stack__
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__zY17K)}
+              className={classNames(projectcss.all, sty.columns___66VZy)}
             >
-              <div className={classNames(projectcss.all, sty.column___0G51L)}>
+              <div className={classNames(projectcss.all, sty.column___1QvNh)}>
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img__zncdT)}
+                  className={classNames(sty.img___3NUq9)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={
@@ -405,13 +413,13 @@ function PlasmicImpressum__RenderFunc(props: {
                   }}
                 />
               </div>
-              <div className={classNames(projectcss.all, sty.column__tMWgZ)}>
+              <div className={classNames(projectcss.all, sty.column__o1T8Y)}>
                 <h4
                   className={classNames(
                     projectcss.all,
                     projectcss.h4,
                     projectcss.__wab_text,
-                    sty.h4__i959E
+                    sty.h4___01Vk3
                   )}
                 >
                   {"Kontakt"}
@@ -419,22 +427,24 @@ function PlasmicImpressum__RenderFunc(props: {
                 <Stack__
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__et41U)}
+                  className={classNames(projectcss.all, sty.columns__pc2C)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column___2FG5)}
+                    className={classNames(projectcss.all, sty.column__kIbSb)}
                   >
                     <Call24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon
-                      className={classNames(projectcss.all, sty.svg__hC95)}
+                      className={classNames(projectcss.all, sty.svg__emyKi)}
                       role={"img"}
                     />
                   </div>
-                  <div className={classNames(projectcss.all, sty.column__zjry)}>
+                  <div
+                    className={classNames(projectcss.all, sty.column__pTomk)}
+                  >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__lYem8
+                        sty.text__zlgdv
                       )}
                     >
                       {"099 736 1551"}
@@ -444,25 +454,25 @@ function PlasmicImpressum__RenderFunc(props: {
                 <Stack__
                   as={"div"}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__nTndh)}
+                  className={classNames(projectcss.all, sty.columns__ncLxk)}
                 >
                   <div
-                    className={classNames(projectcss.all, sty.column___9Megf)}
+                    className={classNames(projectcss.all, sty.column__vNrxE)}
                   >
                     <Mail24DpE8EaedFill1Wght400Grad0Opsz24SvgIcon
-                      className={classNames(projectcss.all, sty.svg__yvZd1)}
+                      className={classNames(projectcss.all, sty.svg__guIvr)}
                       role={"img"}
                     />
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.column__pEMvu)}
+                    className={classNames(projectcss.all, sty.column___7WPjs)}
                   >
                     <PlasmicLink__
                       className={classNames(
                         projectcss.all,
                         projectcss.a,
                         projectcss.__wab_text,
-                        sty.link___9Z70R
+                        sty.link___7Mb1P
                       )}
                       component={Link}
                       href={"mailto:info@animatorica-princess-maddy.com"}
@@ -475,13 +485,13 @@ function PlasmicImpressum__RenderFunc(props: {
                   </div>
                 </Stack__>
               </div>
-              <div className={classNames(projectcss.all, sty.column___4I8Kk)}>
+              <div className={classNames(projectcss.all, sty.column__kQFbi)}>
                 <h4
                   className={classNames(
                     projectcss.all,
                     projectcss.h4,
                     projectcss.__wab_text,
-                    sty.h4__rqVmW
+                    sty.h4__vPfXf
                   )}
                 >
                   {"Pratite me!"}
@@ -497,23 +507,7 @@ function PlasmicImpressum__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link__qr0Po
-                    )}
-                    component={Link}
-                    href={"https://www.facebook.com/share/16HpvQNQiQ/"}
-                    platform={"nextjs"}
-                    target={"_blank"}
-                  >
-                    <Instagram3SvgIcon
-                      className={classNames(projectcss.all, sty.svg__vVAjw)}
-                      role={"img"}
-                    />
-                  </PlasmicLink__>
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__pgRyR
+                      sty.link__jB7XU
                     )}
                     component={Link}
                     href={
@@ -522,8 +516,40 @@ function PlasmicImpressum__RenderFunc(props: {
                     platform={"nextjs"}
                     target={"_blank"}
                   >
+                    <Instagram3SvgIcon
+                      className={classNames(projectcss.all, sty.svg__ob4Cl)}
+                      role={"img"}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__vfmoz
+                    )}
+                    component={Link}
+                    href={"https://www.tiktok.com/@partyprincessmaddy"}
+                    platform={"nextjs"}
+                    target={"_blank"}
+                  >
+                    <TiktokSvgIcon
+                      className={classNames(projectcss.all, sty.svg__kuz5)}
+                      role={"img"}
+                    />
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__jbSuj
+                    )}
+                    component={Link}
+                    href={"https://www.facebook.com/share/16HpvQNQiQ/"}
+                    platform={"nextjs"}
+                    target={"_blank"}
+                  >
                     <Facebook3SvgIcon
-                      className={classNames(projectcss.all, sty.svg__a8JKo)}
+                      className={classNames(projectcss.all, sty.svg__txkDq)}
                       role={"img"}
                     />
                   </PlasmicLink__>
@@ -539,37 +565,12 @@ function PlasmicImpressum__RenderFunc(props: {
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text___2Up8V
+                  sty.text__pupnJ
                 )}
               >
                 {"\u00a9 2025 Firefly. Sva prava pridr\u017eana. "}
               </div>
             </section>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__jUl8Q)}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={
-                hasVariant(globalVariants, "screen", "smallDesktop")
-                  ? "150%"
-                  : "100%"
-              }
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "smallDesktop")
-                  ? "104%"
-                  : "100%"
-              }
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/princess_maddy/images/cloudsWebp.webp",
-                fullWidth: 2422,
-                fullHeight: 857,
-                aspectRatio: undefined
-              }}
-            />
           </section>
         </div>
       </div>

@@ -428,13 +428,19 @@ function PlasmicHome__RenderFunc(props: {
               displayHeight={"auto"}
               displayMaxHeight={"none"}
               displayMaxWidth={
-                hasVariant(globalVariants, "screen", "mobile") ? "500%" : "100%"
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? "500%"
+                  : hasVariant(globalVariants, "screen", "tablet")
+                  ? "600%"
+                  : "100%"
               }
               displayMinHeight={"0"}
               displayMinWidth={"0"}
               displayWidth={
                 hasVariant(globalVariants, "screen", "mobile")
                   ? "800px"
+                  : hasVariant(globalVariants, "screen", "tablet")
+                  ? "1100px"
                   : "100%"
               }
               loading={"lazy"}
@@ -1279,7 +1285,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__cmunt
                     )}
                   >
-                    {"15 min"}
+                    {"20 min"}
                   </div>
                   <section
                     data-plasmic-name={"divider"}
