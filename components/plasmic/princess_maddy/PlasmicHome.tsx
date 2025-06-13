@@ -790,8 +790,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -838,8 +840,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -886,8 +890,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -919,7 +925,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__ayeO
                   )}
                 >
-                  {"Snje\u017ena princeza"}
+                  {"Snje\u017ena Princeza"}
                 </div>
               </div>
               <div
@@ -934,8 +940,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -990,8 +998,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -1038,8 +1048,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -1082,8 +1094,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
@@ -1130,8 +1144,10 @@ function PlasmicHome__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "250px"
-                      : "350px"
+                      ? "100%"
+                      : hasVariant(globalVariants, "screen", "smallDesktop")
+                      ? "100%"
+                      : "100%"
                   }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
