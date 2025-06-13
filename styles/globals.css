@@ -40,3 +40,30 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Prilagodba CookieYes bannera */
+.cky-revisit-bottom-left {
+  display: none !important;
+}
+
+.cky-notice-des {
+  font-family: Quicksand, sans-serif !important;
+  font-size: 18px !important;
+}
+
+.cky-title {
+  font-family: Quando, serif !important;
+  font-size: 20px !important;
+}
+
+.cky-btn {
+  border-radius: 8px;
+  font-family: Quicksand, sans-serif !important;
+  font-size: 18px !important;
+}
+
+.cky-btn:hover {
+  border-color: #427AC4 !important;
+  background-color: #427AC4 !important;
+  color: #ffffff !important;
+}
