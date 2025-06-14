@@ -180,7 +180,7 @@ function PlasmicImpressum__RenderFunc(props: {
                   sty.link__mnJ3
                 )}
                 component={Link}
-                href={"#"}
+                href={`/`}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -229,10 +229,10 @@ function PlasmicImpressum__RenderFunc(props: {
                   sty.link__vZ6AR
                 )}
                 component={Link}
-                href={"animatorica-princess-maddy.com/#contact"}
+                href={`/`}
                 platform={"nextjs"}
               >
-                {"Kontakt"}
+                {"Naslovnica"}
               </PlasmicLink__>
             }
             openButton={

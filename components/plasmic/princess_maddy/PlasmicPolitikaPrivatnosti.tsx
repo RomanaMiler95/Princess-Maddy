@@ -181,7 +181,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                   sty.link__rbHxx
                 )}
                 component={Link}
-                href={"#"}
+                href={`/`}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -230,10 +230,10 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                   sty.link__tUxtv
                 )}
                 component={Link}
-                href={"animatorica-princess-maddy.com/#contact"}
+                href={`/`}
                 platform={"nextjs"}
               >
-                {"Kontakt"}
+                {"Naslovnica"}
               </PlasmicLink__>
             }
             openButton={
@@ -326,7 +326,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
               )}
             >
               {
-                "Va\u0161e podatke obra\u0111ujemo isklju\u010divo radi odgovora na va\u0161 upit i pru\u017eanja usluge savjetovanja."
+                "Va\u0161e podatke obra\u0111ujemo isklju\u010divo radi odgovora na va\u0161 upit i pru\u017eanja usluge animiranja."
               }
             </div>
             <h5

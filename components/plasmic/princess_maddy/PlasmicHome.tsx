@@ -268,7 +268,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.link__xiIxQ
                   )}
                   component={Link}
-                  href={"#"}
+                  href={`/`}
                   platform={"nextjs"}
                 >
                   <PlasmicImg__
@@ -1251,10 +1251,33 @@ function PlasmicHome__RenderFunc(props: {
               ) : (
                 <React.Fragment>
                   <React.Fragment>
+                    {"Cijene se odnose na podru\u010dje "}
+                  </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Nove Gradi\u0161ke i okolna mjesta unutar 10 km"}
+                  </span>
+                  <React.Fragment>{", za animaciju "}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"do 15 djece"}
+                  </span>
+                  <React.Fragment>
                     {
-                      "Cijene se odnose na Novu Gradi\u0161ku i mjesta u krugu od 10 kilometara.\nMjesta udaljenija od 10km nadodaju "
+                      ".\nZa ve\u0107i broj djece cijena se formira individualno, ovisno o potrebama. Mjesta "
                     }
                   </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"udaljenija od 10km"}
+                  </span>
+                  <React.Fragment>{" \nnadodaju "}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
@@ -1269,15 +1292,8 @@ function PlasmicHome__RenderFunc(props: {
                     {"po kilometru"}
                   </span>
                   <React.Fragment>
-                    {" na odabrani paket cijene.\nMaksimalan broj djece je "}
+                    {" na odabrani paket cijene."}
                   </React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
-                  >
-                    {"15"}
-                  </span>
-                  <React.Fragment>{"."}</React.Fragment>
                 </React.Fragment>
               )}
             </p>
@@ -1440,6 +1456,33 @@ function PlasmicHome__RenderFunc(props: {
                         )}
                       >
                         {"Pjevanje pjesme 'Sretan ro\u0111endan'"}
+                      </div>
+                    </div>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.columns__jBtHf)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__n0BVu)}
+                    >
+                      <Check24DpE8EaedFill0Wght400Grad0Opsz24SvgIcon
+                        className={classNames(projectcss.all, sty.svg__gdJaw)}
+                        role={"img"}
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.column__iCcxT)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___2Mpb0
+                        )}
+                      >
+                        {"Krunidba"}
                       </div>
                     </div>
                   </Stack__>
