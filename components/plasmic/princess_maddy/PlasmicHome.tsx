@@ -1079,7 +1079,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__hGf6
                   )}
                 >
-                  {"Barbie"}
+                  {"Barbika"}
                 </div>
               </div>
               <div
@@ -1179,7 +1179,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text___1VoMg
                   )}
                 >
-                  {"Hermione"}
+                  {"\u010carobnica"}
                 </div>
               </div>
             </Stack__>
