@@ -785,7 +785,7 @@ function PlasmicHome__RenderFunc(props: {
               >
                 <PlasmicImg__
                   alt={""}
-                  className={classNames(sty.img___93ZHa)}
+                  className={classNames(sty.img__bQ6Nz)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "400px"
@@ -800,7 +800,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={
-                    hasVariant(globalVariants, "screen", "smallDesktop")
+                    hasVariant(globalVariants, "screen", "mobile")
                       ? "100%"
                       : "350px"
                   }
@@ -814,7 +814,7 @@ function PlasmicHome__RenderFunc(props: {
                 />
 
                 <Crown1SvgIcon
-                  className={classNames(projectcss.all, sty.svg___2SnTm)}
+                  className={classNames(projectcss.all, sty.svg___8Udgf)}
                   role={"img"}
                 />
 
@@ -822,7 +822,7 @@ function PlasmicHome__RenderFunc(props: {
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text__tj87K
+                    sty.text__jbL1P
                   )}
                 >
                   {"Ledena Kraljica"}

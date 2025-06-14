@@ -1323,7 +1323,7 @@
   box-shadow: none;
   min-width: 0;
 }
-.img___93ZHa {
+.img__bQ6Nz {
   object-fit: cover;
   max-width: 100%;
   width: 350px;
@@ -1331,53 +1331,65 @@
   min-height: 0;
   border-radius: 30px;
 }
-.img___93ZHa > picture > img {
+.img__bQ6Nz > picture > img {
   object-fit: cover;
 }
 @media (max-width: 1919px) {
-  .img___93ZHa {
-    width: 100%;
+  .img__bQ6Nz {
+    object-position: 50% -29px;
     height: 100%;
-    min-width: 0;
+    min-height: 0;
+  }
+}
+@media (max-width: 1919px) {
+  .img__bQ6Nz > picture > img {
+    object-position: 50% -29px;
+  }
+}
+@media (max-width: 1439px) {
+  .img__bQ6Nz {
+    object-position: 50% -22px;
+    height: 100%;
     min-height: 0;
   }
 }
 @media (max-width: 1439px) {
-  .img___93ZHa {
-    height: 100%;
-    min-height: 0;
+  .img__bQ6Nz > picture > img {
+    object-position: 50% -22px;
   }
 }
 @media (min-width: 0px) and (max-width: 930px) {
-  .img___93ZHa {
+  .img__bQ6Nz {
     height: 400px;
+    object-position: 50% -47px;
+    width: 100%;
+    min-width: 0;
     flex-shrink: 0;
   }
 }
-.root .img___93ZHa:hover {
-  transform: translateX(0px) translateY(-20px) translateZ(0px) scaleX(1.1)
-    scaleY(1.1) scaleZ(1.1);
-  transform-style: preserve-3d;
+@media (min-width: 0px) and (max-width: 930px) {
+  .img__bQ6Nz > picture > img {
+    object-position: 50% -47px;
+  }
 }
-.root .img___93ZHa:hover * {
-  transform-style: preserve-3d;
-}
-.svg___2SnTm {
+.svg___8Udgf {
   position: absolute;
   color: var(--token-s6b0VA39kBj7);
   transform: rotateX(0deg) rotateY(0deg) rotateZ(-25deg);
   height: 45px;
   left: auto;
   top: auto;
+  width: auto;
+  right: auto;
   bottom: 22px;
   flex-shrink: 0;
 }
 @media (max-width: 1439px) {
-  .svg___2SnTm {
+  .svg___8Udgf {
     bottom: 16px;
   }
 }
-.text__tj87K {
+.text__jbL1P {
   position: absolute;
   width: 250px;
   height: auto;
@@ -1399,18 +1411,10 @@
   border: 5px solid var(--token-s6b0VA39kBj7);
 }
 @media (max-width: 1439px) {
-  .text__tj87K {
+  .text__jbL1P {
     font-size: 16px;
     max-width: 85%;
   }
-}
-@media (min-width: 0px) and (max-width: 930px) {
-  .text__tj87K {
-    font-size: 20px;
-  }
-}
-.root .text__tj87K:hover {
-  background: var(--token-9DZ7SpUQhGVf);
 }
 .rapunzel {
   display: flex;
