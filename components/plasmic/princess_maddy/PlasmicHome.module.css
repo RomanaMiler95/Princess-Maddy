@@ -141,11 +141,21 @@
 .img__aSgi1 > picture > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 930px) {
+  .img__aSgi1 {
+    width: 36px;
+  }
+}
 .img__pTaFf {
   object-fit: cover;
 }
 .img__pTaFf > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .img__pTaFf {
+    width: 36px;
+  }
 }
 .link___5F3DY {
   position: relative;
@@ -154,6 +164,11 @@
   max-width: 100%;
   font-weight: 600;
   font-size: 24px;
+}
+@media (min-width: 0px) and (max-width: 930px) {
+  .link___5F3DY {
+    font-size: 20px;
+  }
 }
 .heroSadrzaj {
   display: flex;
@@ -436,7 +451,7 @@
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .djecjaZabavaUzMaloCarolije {
-    padding: 56px 16px;
+    padding: 0px 16px 56px;
   }
 }
 @media (min-width: 0px) and (max-width: 930px) {
@@ -1336,40 +1351,40 @@
 }
 @media (max-width: 1919px) {
   .img__bQ6Nz {
-    object-position: 50% -29px;
+    object-position: 50% 0px;
     height: 100%;
     min-height: 0;
   }
 }
 @media (max-width: 1919px) {
   .img__bQ6Nz > picture > img {
-    object-position: 50% -29px;
+    object-position: 50% 0px;
   }
 }
 @media (max-width: 1439px) {
   .img__bQ6Nz {
-    object-position: 50% -22px;
+    object-position: 50% 0px;
     height: 100%;
     min-height: 0;
   }
 }
 @media (max-width: 1439px) {
   .img__bQ6Nz > picture > img {
-    object-position: 50% -22px;
+    object-position: 50% 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .img__bQ6Nz {
-    height: 400px;
-    object-position: 50% -47px;
     width: 100%;
+    object-position: 50% 0px;
+    height: 400px;
     min-width: 0;
     flex-shrink: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 930px) {
   .img__bQ6Nz > picture > img {
-    object-position: 50% -47px;
+    object-position: 50% 0px;
   }
 }
 .svg___8Udgf {

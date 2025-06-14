@@ -228,6 +228,21 @@ function PlasmicHome__RenderFunc(props: {
           name="twitter:title"
           content={PlasmicHome.pageMetadata.title}
         />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicHome.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicHome.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicHome.pageMetadata.description}
+        />
       </Head>
 
       <style>{`
@@ -303,9 +318,18 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"none"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "36px"
+                      : "auto"
+                  }
                   src={"https://static1.plasmic.app/close.svg"}
                 />
+              }
+              forceOpenMenu={
+                hasVariant(globalVariants, "screen", "mobile")
+                  ? false
+                  : undefined
               }
               itemsGap={8}
               menuItems={
@@ -332,7 +356,11 @@ function PlasmicHome__RenderFunc(props: {
                   displayMaxWidth={"none"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"auto"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "36px"
+                      : "auto"
+                  }
                   src={"https://static1.plasmic.app/menu.svg"}
                 />
               }
@@ -374,7 +402,7 @@ function PlasmicHome__RenderFunc(props: {
                 >
                   {hasVariant(globalVariants, "screen", "tablet")
                     ? "Tra\u017eite savr\u0161enu zabavu za svoju djevoj\u010dicu koja sanja o tome da bude ledena princeza ili sirena? Tu sam da ostvarim njezine snove!"
-                    : "Tra\u017eite savr\u0161enu zabavu za svoju djevoj\u010dicu koja \nsanja o tome da bude ledena princeza ili sirena? \nTu sam da ostvarim njezine snove!"}
+                    : "Tra\u017eite savr\u0161enu zabavu za svoju djevoj\u010dicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!"}
                 </div>
                 <Button
                   data-plasmic-name={"posaljiUpit"}
@@ -1220,33 +1248,42 @@ function PlasmicHome__RenderFunc(props: {
               {hasVariant(globalVariants, "screen", "tablet") ? (
                 <React.Fragment>
                   <React.Fragment>
+                    {"Cijene se odnose na podru\u010dje "}
+                  </React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"Nove Gradi\u0161ke i okolna mjesta unutar 10 km"}
+                  </span>
+                  <React.Fragment>{", za animaciju "}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {"do 15 djece"}
+                  </span>
+                  <React.Fragment>
                     {
-                      "Cijene se odnose na Novu Gradi\u0161ku i mjesta u krugu od 10 kilometara.\nMjesta udaljenija od 10km nadodaju "
+                      ". Za ve\u0107i broj djece cijena se formira individualno, ovisno o potrebama. Mjesta "
                     }
                   </React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"+0,65\u20ac"}
+                    {"udaljenija od 10km"}
                   </span>
-                  <React.Fragment> </React.Fragment>
+                  <React.Fragment>{"\u00a0nadodaju\u00a0"}</React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"po kilometru"}
+                    {"+0,65\u20ac\u00a0po kilometru"}
                   </span>
                   <React.Fragment>
-                    {" na odabrani paket cijene. Maksimalan broj djece je "}
+                    {"\u00a0na odabrani paket cijene."}
                   </React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
-                  >
-                    {"15"}
-                  </span>
-                  <React.Fragment>{"."}</React.Fragment>
                 </React.Fragment>
               ) : (
                 <React.Fragment>
@@ -3367,7 +3404,8 @@ export const PlasmicHome = Object.assign(
     // Page metadata
     pageMetadata: {
       title: "Dječja animatorica - Princess Maddy",
-      description: "",
+      description:
+        "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
       ogImageSrc: "",
       canonical: ""
     }
