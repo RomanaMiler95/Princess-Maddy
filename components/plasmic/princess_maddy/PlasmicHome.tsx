@@ -3417,7 +3417,7 @@ export const PlasmicHome = Object.assign(
       description:
         "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
       ogImageSrc:
-        "https://site-assets.plasmic.app/8c89dc573909044763af66cc0741fe2e.png",
+        "https://site-assets.plasmic.app/55796a72fd35e79b84ffe58834002fa4.png",
       canonical: ""
     }
   }
