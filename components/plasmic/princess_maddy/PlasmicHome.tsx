@@ -3412,6 +3412,9 @@ export const PlasmicHome = Object.assign(
     internalVariantProps: PlasmicHome__VariantProps,
     internalArgProps: PlasmicHome__ArgProps,
 
+    // Key-value metadata
+    metadata: { ogType: "website" },
+
     // Page metadata
     pageMetadata: {
       title: "Dječja animatorica - Princess Maddy",
@@ -3419,7 +3422,7 @@ export const PlasmicHome = Object.assign(
         "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
       ogImageSrc:
         "https://animatorica-princess-maddy.com/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png",
-      canonical: "https://animatorica-princess-maddy.com/"
+      canonical: "https://animatorica-princess-maddy.com"
     }
   }
 );
