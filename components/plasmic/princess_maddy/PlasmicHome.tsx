@@ -253,6 +253,7 @@ function PlasmicHome__RenderFunc(props: {
           name="twitter:image"
           content={PlasmicHome.pageMetadata.ogImageSrc}
         />
+        <link rel="canonical" href={PlasmicHome.pageMetadata.canonical} />
       </Head>
 
       <style>{`
@@ -3417,8 +3418,8 @@ export const PlasmicHome = Object.assign(
       description:
         "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
       ogImageSrc:
-        "https://site-assets.plasmic.app/55796a72fd35e79b84ffe58834002fa4.png",
-      canonical: ""
+        "https://animatorica-princess-maddy.com/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png",
+      canonical: "https://animatorica-princess-maddy.com/"
     }
   }
 );
