@@ -146,7 +146,20 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicPolitikaPrivatnosti.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicPolitikaPrivatnosti.pageMetadata.ogImageSrc}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -790,7 +803,8 @@ export const PlasmicPolitikaPrivatnosti = Object.assign(
     pageMetadata: {
       title: "",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/8c89dc573909044763af66cc0741fe2e.png",
       canonical: ""
     }
   }

@@ -10,6 +10,15 @@ export type ScheduleValue = "override";
 export const ScheduleContext = React.createContext<ScheduleValue | undefined>(
   "PLEASE_RENDER_INSIDE_PROVIDER" as any
 );
+export function ScheduleContextProvider(
+  props: React.PropsWithChildren<{ value: ScheduleValue | undefined }>
+) {
+  return (
+    <ScheduleContext.Provider value={props.value}>
+      {props.children}
+    </ScheduleContext.Provider>
+  );
+}
 
 export function useSchedule() {
   return React.useContext(ScheduleContext);

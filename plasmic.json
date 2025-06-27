@@ -933,6 +933,11 @@
           "id": "rlKYKYsNU6Mj",
           "name": "galerija-image-12.webp",
           "filePath": "../public/plasmic/princess_maddy/images/galerijaImage12Webp.webp"
+        },
+        {
+          "id": "Lzqnf25P0YSH",
+          "name": "animatorica-princess-maddy-graph-image.png",
+          "filePath": "../public/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png"
         }
       ],
       "indirect": false,

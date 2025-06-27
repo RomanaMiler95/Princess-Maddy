@@ -216,7 +216,7 @@ function PlasmicHome__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicHome.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -242,6 +242,16 @@ function PlasmicHome__RenderFunc(props: {
           key="twitter:description"
           name="twitter:description"
           content={PlasmicHome.pageMetadata.description}
+        />
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicHome.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicHome.pageMetadata.ogImageSrc}
         />
       </Head>
 
@@ -3406,7 +3416,8 @@ export const PlasmicHome = Object.assign(
       title: "Dječja animatorica - Princess Maddy",
       description:
         "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/8c89dc573909044763af66cc0741fe2e.png",
       canonical: ""
     }
   }

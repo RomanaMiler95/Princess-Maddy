@@ -145,7 +145,20 @@ function PlasmicImpressum__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head></Head>
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicImpressum.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicImpressum.pageMetadata.ogImageSrc}
+        />
+      </Head>
 
       <style>{`
         body {
@@ -743,7 +756,8 @@ export const PlasmicImpressum = Object.assign(
     pageMetadata: {
       title: "",
       description: "",
-      ogImageSrc: "",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/8c89dc573909044763af66cc0741fe2e.png",
       canonical: ""
     }
   }
