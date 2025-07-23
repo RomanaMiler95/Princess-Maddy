@@ -1265,7 +1265,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"Nove Gradi\u0161ke i okolna mjesta unutar 10 km"}
+                    {"Nove Gradi\u0161ke i okolna mjesta unutar 5 km"}
                   </span>
                   <React.Fragment>{", za animaciju "}</React.Fragment>
                   <span
@@ -1283,7 +1283,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"udaljenija od 10km"}
+                    {"udaljenija od 5km"}
                   </span>
                   <React.Fragment>{"\u00a0nadodaju\u00a0"}</React.Fragment>
                   <span
@@ -1305,7 +1305,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"Nove Gradi\u0161ke i okolna mjesta unutar 10 km"}
+                    {"Nove Gradi\u0161ke i okolna mjesta unutar 5 km"}
                   </span>
                   <React.Fragment>{", za animaciju "}</React.Fragment>
                   <span
@@ -1323,7 +1323,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"udaljenija od 10km"}
+                    {"udaljenija od 5km"}
                   </span>
                   <React.Fragment>{" \nnadodaju "}</React.Fragment>
                   <span
