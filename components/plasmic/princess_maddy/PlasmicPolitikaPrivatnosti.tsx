@@ -445,11 +445,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
             data-plasmic-override={overrides.footer}
             className={classNames(projectcss.all, sty.footer)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__cHowJ)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__cHowJ)}>
               <div className={classNames(projectcss.all, sty.column__bbTdc)}>
                 <PlasmicImg__
                   alt={""}
@@ -488,11 +484,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                 >
                   {"Kontakt"}
                 </h4>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__qsV9)}
-                >
+                <div className={classNames(projectcss.all, sty.columns__qsV9)}>
                   <div
                     className={classNames(projectcss.all, sty.column__suyt4)}
                   >
@@ -514,12 +506,8 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                       {"099 736 1551"}
                     </div>
                   </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__shqsi)}
-                >
+                </div>
+                <div className={classNames(projectcss.all, sty.columns__shqsi)}>
                   <div
                     className={classNames(projectcss.all, sty.column__vnMYu)}
                   >
@@ -547,7 +535,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                         : "info@animatorica-princess-maddy.com"}
                     </PlasmicLink__>
                   </div>
-                </Stack__>
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__ldX73)}>
                 <h4
@@ -606,11 +594,9 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                 >
                   {"Pratite me!"}
                 </h4>
-                <Stack__
-                  as={"div"}
+                <div
                   data-plasmic-name={"freeBox"}
                   data-plasmic-override={overrides.freeBox}
-                  hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox)}
                 >
                   <PlasmicLink__
@@ -663,9 +649,9 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                       role={"img"}
                     />
                   </PlasmicLink__>
-                </Stack__>
+                </div>
               </div>
-            </Stack__>
+            </div>
             <section
               data-plasmic-name={"section"}
               data-plasmic-override={overrides.section}

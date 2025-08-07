@@ -378,11 +378,9 @@ function PlasmicHome__RenderFunc(props: {
               responsiveBreakpoint={768}
             />
 
-            <Stack__
-              as={"div"}
+            <div
               data-plasmic-name={"heroSadrzaj"}
               data-plasmic-override={overrides.heroSadrzaj}
-              hasGap={true}
               className={classNames(projectcss.all, sty.heroSadrzaj)}
             >
               <div
@@ -462,7 +460,7 @@ function PlasmicHome__RenderFunc(props: {
                   }}
                 />
               </div>
-            </Stack__>
+            </div>
             <PlasmicImg__
               alt={""}
               className={classNames(sty.img__vqBp3)}
@@ -501,11 +499,7 @@ function PlasmicHome__RenderFunc(props: {
               sty.djecjaZabavaUzMaloCarolije
             )}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns___8IkSk)}
-            >
+            <div className={classNames(projectcss.all, sty.columns___8IkSk)}>
               <div
                 data-plasmic-name={"sadrzaj"}
                 data-plasmic-override={overrides.sadrzaj}
@@ -591,7 +585,7 @@ function PlasmicHome__RenderFunc(props: {
                   }}
                 />
               </div>
-            </Stack__>
+            </div>
           </section>
           <section
             data-plasmic-name={"stoSveUkljucujeStandardniAnimacijskiPaket"}
@@ -617,11 +611,7 @@ function PlasmicHome__RenderFunc(props: {
                 ? "\u0160to sve uklju\u010duje standardni\n animacijski paket?"
                 : "\u0160to sve uklju\u010duje standardni animacijski paket?"}
             </h2>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___6OOl6)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox___6OOl6)}>
               <StarSvgIcon
                 className={classNames(projectcss.all, sty.svg__qWi6P)}
                 role={"img"}
@@ -636,12 +626,8 @@ function PlasmicHome__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.svg__alGpT)}
                 role={"img"}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__u4Foj)}
-            >
+            </div>
+            <div className={classNames(projectcss.all, sty.columns__u4Foj)}>
               <div
                 data-plasmic-name={"zabavnaAnimatorica"}
                 data-plasmic-override={overrides.zabavnaAnimatorica}
@@ -790,7 +776,7 @@ function PlasmicHome__RenderFunc(props: {
                   {"Krunidba"}
                 </div>
               </div>
-            </Stack__>
+            </div>
           </section>
           <section
             data-plasmic-name={"izaberiteTemuVaseCarobneZabave"}
@@ -810,11 +796,9 @@ function PlasmicHome__RenderFunc(props: {
             >
               {"Teme za Va\u0161u \u010darobnu zabavu"}
             </h2>
-            <Stack__
-              as={"div"}
+            <div
               data-plasmic-name={"likovi1"}
               data-plasmic-override={overrides.likovi1}
-              hasGap={true}
               className={classNames(projectcss.all, sty.likovi1)}
             >
               <div
@@ -864,7 +848,7 @@ function PlasmicHome__RenderFunc(props: {
                     sty.text__jbL1P
                   )}
                 >
-                  {"Ledena Kraljica"}
+                  {"Snje\u017ena Kraljica"}
                 </div>
               </div>
               <div
@@ -1017,12 +1001,10 @@ function PlasmicHome__RenderFunc(props: {
                   {"Sirena"}
                 </div>
               </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
+            </div>
+            <div
               data-plasmic-name={"likovi2"}
               data-plasmic-override={overrides.likovi2}
-              hasGap={true}
               className={classNames(projectcss.all, sty.likovi2)}
             >
               <div
@@ -1221,7 +1203,7 @@ function PlasmicHome__RenderFunc(props: {
                   {"\u010carobnica"}
                 </div>
               </div>
-            </Stack__>
+            </div>
           </section>
           <section
             data-plasmic-name={"izaberiteAnimacijskiPaketZaVasuPrincezu3"}
@@ -1345,11 +1327,9 @@ function PlasmicHome__RenderFunc(props: {
                 </React.Fragment>
               )}
             </p>
-            <Stack__
-              as={"div"}
+            <div
               data-plasmic-name={"paketiCijene"}
               data-plasmic-override={overrides.paketiCijene}
-              hasGap={true}
               className={classNames(projectcss.all, sty.paketiCijene)}
             >
               <div
@@ -1382,7 +1362,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__m3SwJ
                     )}
                   >
-                    {"20\u20ac"}
+                    {"30\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -1391,7 +1371,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__cmunt
                     )}
                   >
-                    {"20 min"}
+                    {"30 min"}
                   </div>
                   <section
                     data-plasmic-name={"divider"}
@@ -1399,9 +1379,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.divider)}
                   />
 
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.columns___5HLx5)}
                   >
                     <div
@@ -1425,10 +1403,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Bez animiranja"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__lsMUd)}
                   >
                     <div
@@ -1452,10 +1428,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Fotografiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__ckSvM)}
                   >
                     <div
@@ -1479,10 +1453,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Dru\u017eenje sa slavljenicom"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__fpeHp)}
                   >
                     <div
@@ -1506,10 +1478,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Pjevanje pjesme 'Sretan ro\u0111endan'"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__jBtHf)}
                   >
                     <div
@@ -1533,7 +1503,7 @@ function PlasmicHome__RenderFunc(props: {
                         {"Krunidba"}
                       </div>
                     </div>
-                  </Stack__>
+                  </div>
                   <Button
                     className={classNames("__wab_instance", sty.button__f17QV)}
                     endIcon={
@@ -1587,7 +1557,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__okmPd
                     )}
                   >
-                    {"40\u20ac"}
+                    {"50\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -1604,9 +1574,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.divider2)}
                   />
 
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.columns__a01MH)}
                   >
                     <div
@@ -1630,10 +1598,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Animiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__vu8Wy)}
                   >
                     <div
@@ -1657,10 +1623,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Fotografiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__o4Ocf)}
                   >
                     <div
@@ -1684,10 +1648,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Tematske igre"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__lbA0Y)}
                   >
                     <div
@@ -1711,10 +1673,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"\u010citanje pri\u010de"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__ujvIv)}
                   >
                     <div
@@ -1738,10 +1698,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Interaktivni sadr\u017eaj"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__hofuf)}
                   >
                     <div
@@ -1765,7 +1723,7 @@ function PlasmicHome__RenderFunc(props: {
                         {"Krunidba"}
                       </div>
                     </div>
-                  </Stack__>
+                  </div>
                   <Button
                     className={classNames("__wab_instance", sty.button__jKpqd)}
                     endIcon={
@@ -1821,7 +1779,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__mxfIf
                     )}
                   >
-                    {"70\u20ac"}
+                    {"80\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -1838,9 +1796,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.divider3)}
                   />
 
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.columns__jMo1)}
                   >
                     <div
@@ -1864,10 +1820,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Animiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__mx6Bl)}
                   >
                     <div
@@ -1891,10 +1845,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Fotografiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__f3Z3Z)}
                   >
                     <div
@@ -1918,10 +1870,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Tematske igre"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns___0VHkq)}
                   >
                     <div
@@ -1945,10 +1895,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"\u010citanje pri\u010de"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__dzkoz)}
                   >
                     <div
@@ -1972,10 +1920,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Interaktivni sadr\u017eaj"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__imbjr)}
                   >
                     <div
@@ -1999,10 +1945,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Krunidba"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__eEpg)}
                   >
                     <div
@@ -2026,7 +1970,7 @@ function PlasmicHome__RenderFunc(props: {
                         {"Facepainting"}
                       </div>
                     </div>
-                  </Stack__>
+                  </div>
                   <Button
                     className={classNames("__wab_instance", sty.button___7ZPYx)}
                     endIcon={
@@ -2080,7 +2024,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__hN7FQ
                     )}
                   >
-                    {"100\u20ac"}
+                    {"120\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -2097,9 +2041,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(projectcss.all, sty.divider4)}
                   />
 
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  <div
                     className={classNames(projectcss.all, sty.columns__vDw9C)}
                   >
                     <div
@@ -2123,10 +2065,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Animiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__kb9Vp)}
                   >
                     <div
@@ -2150,10 +2090,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Fotografiranje"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__sw5T)}
                   >
                     <div
@@ -2177,10 +2115,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Tematske igre"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns___5L69)}
                   >
                     <div
@@ -2204,10 +2140,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"\u010citanje pri\u010de"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns___3EnGo)}
                   >
                     <div
@@ -2231,10 +2165,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Interaktivni sadr\u017eaj"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__fuR3Y)}
                   >
                     <div
@@ -2258,10 +2190,8 @@ function PlasmicHome__RenderFunc(props: {
                         {"Krunidba"}
                       </div>
                     </div>
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
+                  </div>
+                  <div
                     className={classNames(projectcss.all, sty.columns__pVg2L)}
                   >
                     <div
@@ -2285,7 +2215,7 @@ function PlasmicHome__RenderFunc(props: {
                         {"Facepainting"}
                       </div>
                     </div>
-                  </Stack__>
+                  </div>
                   <Button
                     className={classNames("__wab_instance", sty.button__ttFuf)}
                     endIcon={
@@ -2309,7 +2239,7 @@ function PlasmicHome__RenderFunc(props: {
                   </Button>
                 </section>
               </div>
-            </Stack__>
+            </div>
           </section>
           <section
             data-plasmic-name={"galerija"}
@@ -2326,11 +2256,7 @@ function PlasmicHome__RenderFunc(props: {
             >
               {"Pogledajte na\u0161e \u010darobne proslave"}
             </h2>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__xOaOx)}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox__xOaOx)}>
               <StarSvgIcon
                 className={classNames(projectcss.all, sty.svg__msJ7K)}
                 role={"img"}
@@ -2345,17 +2271,9 @@ function PlasmicHome__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.svg__vWz6U)}
                 role={"img"}
               />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__seSdp)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__hjTdp)}
-              >
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__seSdp)}>
+              <div className={classNames(projectcss.all, sty.freeBox__hjTdp)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__tp41F)}
@@ -2381,12 +2299,8 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__jgrFs)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__jgrFs)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__hoksb)}
@@ -2430,12 +2344,8 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__lz777)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__lz777)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img___82HB)}
@@ -2479,18 +2389,10 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__vCaHp)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__nf6B5)}
-              >
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__vCaHp)}>
+              <div className={classNames(projectcss.all, sty.freeBox__nf6B5)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__uflcL)}
@@ -2534,12 +2436,8 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__kvy3K)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__kvy3K)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__xYMc)}
@@ -2583,12 +2481,8 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__hayOf)}
-              >
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__hayOf)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__vTi4U)}
@@ -2614,19 +2508,15 @@ function PlasmicHome__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </Stack__>
-            </Stack__>
+              </div>
+            </div>
           </section>
           <section
             data-plasmic-name={"oPrinceziMaddy"}
             data-plasmic-override={overrides.oPrinceziMaddy}
             className={classNames(projectcss.all, sty.oPrinceziMaddy)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__gl6S)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__gl6S)}>
               <div
                 data-plasmic-name={"slike2"}
                 data-plasmic-override={overrides.slike2}
@@ -2729,7 +2619,7 @@ function PlasmicHome__RenderFunc(props: {
                   role={"img"}
                 />
               </div>
-            </Stack__>
+            </div>
           </section>
           <section
             data-plasmic-name={"nekaIduciRodendanVasePrincezeBudeCaroban"}
@@ -2794,11 +2684,7 @@ function PlasmicHome__RenderFunc(props: {
             data-plasmic-override={overrides.footer}
             className={classNames(projectcss.all, sty.footer)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__vWzT9)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__vWzT9)}>
               <div className={classNames(projectcss.all, sty.column__t5IVt)}>
                 <PlasmicImg__
                   alt={""}
@@ -2837,11 +2723,7 @@ function PlasmicHome__RenderFunc(props: {
                 >
                   {"Kontakt"}
                 </h4>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__fSl2K)}
-                >
+                <div className={classNames(projectcss.all, sty.columns__fSl2K)}>
                   <div
                     className={classNames(projectcss.all, sty.column__ztKom)}
                   >
@@ -2863,10 +2745,8 @@ function PlasmicHome__RenderFunc(props: {
                       {"099 736 1551"}
                     </div>
                   </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
+                </div>
+                <div
                   className={classNames(projectcss.all, sty.columns___63Dcv)}
                 >
                   <div
@@ -2896,7 +2776,7 @@ function PlasmicHome__RenderFunc(props: {
                         : "info@animatorica-princess-maddy.com"}
                     </PlasmicLink__>
                   </div>
-                </Stack__>
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__uqlZg)}>
                 <h4
@@ -2955,11 +2835,7 @@ function PlasmicHome__RenderFunc(props: {
                 >
                   {"Pratite me!"}
                 </h4>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__bNzpk)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__bNzpk)}>
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
@@ -3010,9 +2886,9 @@ function PlasmicHome__RenderFunc(props: {
                       role={"img"}
                     />
                   </PlasmicLink__>
-                </Stack__>
+                </div>
               </div>
-            </Stack__>
+            </div>
             <section
               data-plasmic-name={"section"}
               data-plasmic-override={overrides.section}

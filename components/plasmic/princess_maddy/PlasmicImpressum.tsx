@@ -398,11 +398,7 @@ function PlasmicImpressum__RenderFunc(props: {
             data-plasmic-override={overrides.footer}
             className={classNames(projectcss.all, sty.footer)}
           >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__qW93D)}
-            >
+            <div className={classNames(projectcss.all, sty.columns__qW93D)}>
               <div className={classNames(projectcss.all, sty.column__bzcuS)}>
                 <PlasmicImg__
                   alt={""}
@@ -441,11 +437,7 @@ function PlasmicImpressum__RenderFunc(props: {
                 >
                   {"Kontakt"}
                 </h4>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__cdMyA)}
-                >
+                <div className={classNames(projectcss.all, sty.columns__cdMyA)}>
                   <div
                     className={classNames(projectcss.all, sty.column__mR2Iu)}
                   >
@@ -467,12 +459,8 @@ function PlasmicImpressum__RenderFunc(props: {
                       {"099 736 1551"}
                     </div>
                   </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.columns__hhqY)}
-                >
+                </div>
+                <div className={classNames(projectcss.all, sty.columns__hhqY)}>
                   <div
                     className={classNames(projectcss.all, sty.column__aeeLp)}
                   >
@@ -500,7 +488,7 @@ function PlasmicImpressum__RenderFunc(props: {
                         : "info@animatorica-princess-maddy.com"}
                     </PlasmicLink__>
                   </div>
-                </Stack__>
+                </div>
               </div>
               <div className={classNames(projectcss.all, sty.column__qNqg)}>
                 <h4
@@ -559,11 +547,9 @@ function PlasmicImpressum__RenderFunc(props: {
                 >
                   {"Pratite me!"}
                 </h4>
-                <Stack__
-                  as={"div"}
+                <div
                   data-plasmic-name={"freeBox"}
                   data-plasmic-override={overrides.freeBox}
-                  hasGap={true}
                   className={classNames(projectcss.all, sty.freeBox)}
                 >
                   <PlasmicLink__
@@ -616,9 +602,9 @@ function PlasmicImpressum__RenderFunc(props: {
                       role={"img"}
                     />
                   </PlasmicLink__>
-                </Stack__>
+                </div>
               </div>
-            </Stack__>
+            </div>
             <section
               data-plasmic-name={"section"}
               data-plasmic-override={overrides.section}
