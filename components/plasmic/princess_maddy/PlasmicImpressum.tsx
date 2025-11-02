@@ -60,12 +60,11 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-
-import { useScreenVariants as useScreenVariantsrbjbd6IxmKjb } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: rbjbd6IxmKJB/globalVariant
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: cYtFYdVtykXpyPSmJwBtNk/projectModule
+import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: cYtFYdVtykXpyPSmJwBtNk/styleTokensProvider
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
 import projectcss from "./plasmic.module.css"; // plasmic-import: cYtFYdVtykXpyPSmJwBtNk/projectcss
 import sty from "./PlasmicImpressum.module.css"; // plasmic-import: mniyWgBlKijO/css
 
@@ -139,9 +138,9 @@ function PlasmicImpressum__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsrbjbd6IxmKjb()
-  });
+  const globalVariants = _useGlobalVariants();
+
+  const styleTokensClassNames = _useStyleTokens();
 
   return (
     <React.Fragment>
@@ -177,8 +176,7 @@ function PlasmicImpressum__RenderFunc(props: {
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_antd_5_hostless_css.plasmic_tokens,
+            styleTokensClassNames,
             sty.root
           )}
         >
@@ -409,10 +407,10 @@ function PlasmicImpressum__RenderFunc(props: {
                     hasVariant(globalVariants, "screen", "mobile")
                       ? "50%"
                       : hasVariant(globalVariants, "screen", "tablet")
-                      ? "100%"
-                      : hasVariant(globalVariants, "screen", "smallDesktop")
-                      ? "80%"
-                      : "90%"
+                        ? "100%"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "80%"
+                          : "90%"
                   }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
@@ -674,7 +672,9 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicImpressum__VariantsArgs;
     args?: PlasmicImpressum__ArgsType;
     overrides?: NodeOverridesType<T>;
-  } & Omit<PlasmicImpressum__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
+  } &
+    // Specify variants directly as props
+    Omit<PlasmicImpressum__VariantsArgs, ReservedPropsType> &
     // Specify args directly as props
     Omit<PlasmicImpressum__ArgsType, ReservedPropsType> &
     // Specify overrides for each element directly as props

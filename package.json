@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.341",
-    "@plasmicapp/react-web": "^0.2.385",
+    "@plasmicapp/cli": "^0.1.348",
+    "@plasmicapp/react-web": "^0.2.406",
     "@plasmicpkgs/antd5": "^0.0.286",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.242",
-    "@plasmicpkgs/plasmic-embed-css": "^0.1.208",
+    "@plasmicpkgs/plasmic-embed-css": "^0.1.213",
     "@plasmicpkgs/plasmic-nav": "^0.0.187",
     "next": "14.2.28",
     "react": "^18",

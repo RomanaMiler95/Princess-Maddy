@@ -419,7 +419,9 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "plasmic/antd_5_hostless/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/antd_5_hostless/plasmic.tsx"
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -477,7 +479,9 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "plasmic/plasmic_basic_components/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_basic_components/plasmic.tsx"
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -499,7 +503,9 @@
           "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx"
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -521,7 +527,9 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "plasmic/plasmic_nav/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/plasmic_nav/plasmic.tsx"
     },
     {
       "projectId": "cYtFYdVtykXpyPSmJwBtNk",
@@ -934,6 +942,86 @@
           "id": "cAFMhGfl60de",
           "name": "animatorica-princess-maddy-graph-image.png",
           "filePath": "../public/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png"
+        },
+        {
+          "id": "adQE0m5L1QtJ",
+          "name": "image-snjegovic.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageSnjegovicWebp.webp"
+        },
+        {
+          "id": "TvPJW3p6God0",
+          "name": "image-balna-princeza.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageBalnaPrincezaWebp.webp"
+        },
+        {
+          "id": "O7g5xREIgHso",
+          "name": "image-barbie-new.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageBarbieNewWebp.webp"
+        },
+        {
+          "id": "ukmppsAc20C3",
+          "name": "image-wednesday.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageWednesdayWebp.webp"
+        },
+        {
+          "id": "C8rSZ9Cw3hnK",
+          "name": "image-galerija-new-7.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew7Webp.webp"
+        },
+        {
+          "id": "aeh-YO2VY0Ib",
+          "name": "image-galerija-new-2.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew2Webp.webp"
+        },
+        {
+          "id": "h4YzW4oNdzHG",
+          "name": "image-galerija-new-5.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew5Webp.webp"
+        },
+        {
+          "id": "mLMaOvCZxwH8",
+          "name": "image-galerija-new-6.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew6Webp.webp"
+        },
+        {
+          "id": "hzIZoJeiCkYN",
+          "name": "image-galerija-new-3.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew3Webp.webp"
+        },
+        {
+          "id": "DhCUdE10zJYf",
+          "name": "image-galerija-new-1.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew1Webp.webp"
+        },
+        {
+          "id": "F2OP_f4tq2C2",
+          "name": "image-tema-alex.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaAlexWebp.webp"
+        },
+        {
+          "id": "69VLjqpk5cw8",
+          "name": "image-tema-olaf-2.png",
+          "filePath": "../public/plasmic/princess_maddy/images/imageTemaOlaf2Png.png"
+        },
+        {
+          "id": "-dycCDvzNjTr",
+          "name": "image-zabava-uz-malo-carolije.png",
+          "filePath": "../public/plasmic/princess_maddy/images/imageZabavaUzMaloCarolijePng.png"
+        },
+        {
+          "id": "HsGucfuMFXSz",
+          "name": "image-galerija-new-8.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew8Webp.webp"
+        },
+        {
+          "id": "CCpKwmDXdWP8",
+          "name": "image-galerija-new-9.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew9Webp.webp"
+        },
+        {
+          "id": "gOQwlyfiVZ5B",
+          "name": "image-galerija-new-10.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew10Webp.webp"
         }
       ],
       "indirect": false,
@@ -953,7 +1041,9 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "styleTokensProviderFilePath": "plasmic/princess_maddy/PlasmicStyleTokensProvider.tsx",
+      "projectModuleFilePath": "plasmic/princess_maddy/plasmic.tsx"
     }
   ],
   "globalVariants": {
@@ -973,9 +1063,10 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
+  "preserveJsImportExtensions": false,
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.341",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.341/dist/plasmic.schema.json"
+  "cliVersion": "0.1.348",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.348/dist/plasmic.schema.json"
 }

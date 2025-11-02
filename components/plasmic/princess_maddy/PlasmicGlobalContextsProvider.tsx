@@ -5,17 +5,17 @@
 // Plasmic Project: cYtFYdVtykXpyPSmJwBtNk
 
 import * as React from "react";
+
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: cYtFYdVtykXpyPSmJwBtNk/projectModule
 import { EmbedCss } from "@plasmicpkgs/plasmic-embed-css";
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
-import { useScreenVariants as useScreenVariantsrbjbd6IxmKjb } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: rbjbd6IxmKJB/globalVariant
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
-
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
@@ -26,10 +26,7 @@ export default function GlobalContextsProvider(
 ) {
   const { children, embedCssProps, antdConfigProviderProps } = props;
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsrbjbd6IxmKjb()
-  });
-
+  const globalVariants = _useGlobalVariants();
   return (
     <EmbedCss
       {...embedCssProps}
@@ -115,33 +112,33 @@ export default function GlobalContextsProvider(
           antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
             ? antdConfigProviderProps.themeStyles!
             : hasVariant(globalVariants, "screen", "tablet")
-            ? {
-                fontFamily: "Quicksand",
-                fontSize: "18px",
-                fontWeight: "500",
-                lineHeight: "1.5",
-                color: "#393939",
-                letterSpacing: "normal"
-              }
-            : hasVariant(globalVariants, "screen", "mobile")
-            ? {
-                fontFamily: "Quicksand",
-                fontSize: "18px",
-                fontWeight: "500",
-                lineHeight: "1.5",
-                color: "#393939",
-                letterSpacing: "normal"
-              }
-            : true
-            ? {
-                fontFamily: "Quicksand",
-                fontSize: "20px",
-                fontWeight: "500",
-                lineHeight: "1.5",
-                color: "#393939",
-                letterSpacing: "normal"
-              }
-            : undefined
+              ? {
+                  fontFamily: "Quicksand",
+                  fontSize: "18px",
+                  fontWeight: "500",
+                  lineHeight: "1.5",
+                  color: "#393939",
+                  letterSpacing: "normal"
+                }
+              : hasVariant(globalVariants, "screen", "mobile")
+                ? {
+                    fontFamily: "Quicksand",
+                    fontSize: "18px",
+                    fontWeight: "500",
+                    lineHeight: "1.5",
+                    color: "#393939",
+                    letterSpacing: "normal"
+                  }
+                : true
+                  ? {
+                      fontFamily: "Quicksand",
+                      fontSize: "20px",
+                      fontWeight: "500",
+                      lineHeight: "1.5",
+                      color: "#393939",
+                      letterSpacing: "normal"
+                    }
+                  : undefined
         }
         wireframe={
           antdConfigProviderProps && "wireframe" in antdConfigProviderProps
