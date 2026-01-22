@@ -154,7 +154,7 @@ function PlasmicImpressum__RenderFunc(props: {
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
+          property="twitter:image"
           content={PlasmicImpressum.pageMetadata.ogImageSrc}
         />
       </Head>

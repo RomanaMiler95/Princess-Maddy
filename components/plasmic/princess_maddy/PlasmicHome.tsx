@@ -122,6 +122,11 @@ export type PlasmicHome__OverridesType = {
   ariel?: Flex__<"div">;
   barbie?: Flex__<"div">;
   wednesday?: Flex__<"div">;
+  likovi3?: Flex__<"div">;
+  snjeguljica2?: Flex__<"div">;
+  ariel2?: Flex__<"div">;
+  barbie2?: Flex__<"div">;
+  wednesday2?: Flex__<"div">;
   izaberiteAnimacijskiPaketZaVasuPrincezu3?: Flex__<"section">;
   p?: Flex__<"p">;
   paketiCijene?: Flex__<"div">;
@@ -224,12 +229,12 @@ function PlasmicHome__RenderFunc(props: {
         />
         <meta
           key="twitter:title"
-          name="twitter:title"
+          property="twitter:title"
           content={PlasmicHome.pageMetadata.title}
         />
         <meta
           key="description"
-          name="description"
+          property="description"
           content={PlasmicHome.pageMetadata.description}
         />
         <meta
@@ -239,7 +244,7 @@ function PlasmicHome__RenderFunc(props: {
         />
         <meta
           key="twitter:description"
-          name="twitter:description"
+          property="twitter:description"
           content={PlasmicHome.pageMetadata.description}
         />
         <meta
@@ -249,7 +254,7 @@ function PlasmicHome__RenderFunc(props: {
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
+          property="twitter:image"
           content={PlasmicHome.pageMetadata.ogImageSrc}
         />
         <link rel="canonical" href={PlasmicHome.pageMetadata.canonical} />
@@ -1196,6 +1201,208 @@ function PlasmicHome__RenderFunc(props: {
                     projectcss.all,
                     projectcss.__wab_text,
                     sty.text__xOlwL
+                  )}
+                >
+                  {"Wendy"}
+                </div>
+              </div>
+            </div>
+            <div
+              data-plasmic-name={"likovi3"}
+              data-plasmic-override={overrides.likovi3}
+              className={classNames(projectcss.all, sty.likovi3)}
+            >
+              <div
+                data-plasmic-name={"snjeguljica2"}
+                data-plasmic-override={overrides.snjeguljica2}
+                className={classNames(projectcss.all, sty.snjeguljica2)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__ioj4Y)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "400px"
+                      : hasVariant(globalVariants, "screen", "tablet")
+                        ? "100%"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "100%"
+                          : "100%"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageTemaSnjeguljicaWebp.webp",
+                    fullWidth: 2250,
+                    fullHeight: 3000,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <Crown1SvgIcon
+                  className={classNames(projectcss.all, sty.svg__bxnLp)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__ipmFa
+                  )}
+                >
+                  {"Snje\u017ena princeza"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"ariel2"}
+                data-plasmic-override={overrides.ariel2}
+                className={classNames(projectcss.all, sty.ariel2)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__dwXk)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "400px"
+                      : hasVariant(globalVariants, "screen", "tablet")
+                        ? "100%"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "100%"
+                          : "100%"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageTemaRumiWebp.webp",
+                    fullWidth: 2709,
+                    fullHeight: 3599,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <Crown1SvgIcon
+                  className={classNames(projectcss.all, sty.svg___3FWda)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rTbx6
+                  )}
+                >
+                  {"Pop pjeva\u010dica"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"barbie2"}
+                data-plasmic-override={overrides.barbie2}
+                className={classNames(projectcss.all, sty.barbie2)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___6H3B8)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "400px"
+                      : hasVariant(globalVariants, "screen", "tablet")
+                        ? "100%"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "100%"
+                          : "100%"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"350px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageTemaGwenWebp.webp",
+                    fullWidth: 2709,
+                    fullHeight: 3599,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <Crown1SvgIcon
+                  className={classNames(projectcss.all, sty.svg___4ZpRj)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___8LnSv
+                  )}
+                >
+                  {"Superheroj"}
+                </div>
+              </div>
+              <div
+                data-plasmic-name={"wednesday2"}
+                data-plasmic-override={overrides.wednesday2}
+                className={classNames(projectcss.all, sty.wednesday2)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__pId1)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "400px"
+                      : hasVariant(globalVariants, "screen", "tablet")
+                        ? "100%"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "100%"
+                          : "100%"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "100%"
+                      : "350px"
+                  }
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageWednesdayWebp.webp",
+                    fullWidth: 2714,
+                    fullHeight: 3599,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <Crown1SvgIcon
+                  className={classNames(projectcss.all, sty.svg__pNm0G)}
+                  role={"img"}
+                />
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__tutG9
                   )}
                 >
                   {"Wendy"}
@@ -2963,6 +3170,11 @@ const PlasmicDescendants = {
     "ariel",
     "barbie",
     "wednesday",
+    "likovi3",
+    "snjeguljica2",
+    "ariel2",
+    "barbie2",
+    "wednesday2",
     "izaberiteAnimacijskiPaketZaVasuPrincezu3",
     "p",
     "paketiCijene",
@@ -3033,7 +3245,12 @@ const PlasmicDescendants = {
     "snjeguljica",
     "ariel",
     "barbie",
-    "wednesday"
+    "wednesday",
+    "likovi3",
+    "snjeguljica2",
+    "ariel2",
+    "barbie2",
+    "wednesday2"
   ],
   likovi1: ["likovi1", "elsa", "olaf", "matovilka", "pepeljuga"],
   elsa: ["elsa"],
@@ -3045,6 +3262,11 @@ const PlasmicDescendants = {
   ariel: ["ariel"],
   barbie: ["barbie"],
   wednesday: ["wednesday"],
+  likovi3: ["likovi3", "snjeguljica2", "ariel2", "barbie2", "wednesday2"],
+  snjeguljica2: ["snjeguljica2"],
+  ariel2: ["ariel2"],
+  barbie2: ["barbie2"],
+  wednesday2: ["wednesday2"],
   izaberiteAnimacijskiPaketZaVasuPrincezu3: [
     "izaberiteAnimacijskiPaketZaVasuPrincezu3",
     "p",
@@ -3135,6 +3357,11 @@ type NodeDefaultElementType = {
   ariel: "div";
   barbie: "div";
   wednesday: "div";
+  likovi3: "div";
+  snjeguljica2: "div";
+  ariel2: "div";
+  barbie2: "div";
+  wednesday2: "div";
   izaberiteAnimacijskiPaketZaVasuPrincezu3: "section";
   p: "p";
   paketiCijene: "div";
@@ -3254,6 +3481,11 @@ export const PlasmicHome = Object.assign(
     ariel: makeNodeComponent("ariel"),
     barbie: makeNodeComponent("barbie"),
     wednesday: makeNodeComponent("wednesday"),
+    likovi3: makeNodeComponent("likovi3"),
+    snjeguljica2: makeNodeComponent("snjeguljica2"),
+    ariel2: makeNodeComponent("ariel2"),
+    barbie2: makeNodeComponent("barbie2"),
+    wednesday2: makeNodeComponent("wednesday2"),
     izaberiteAnimacijskiPaketZaVasuPrincezu3: makeNodeComponent(
       "izaberiteAnimacijskiPaketZaVasuPrincezu3"
     ),

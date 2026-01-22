@@ -155,7 +155,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
         />
         <meta
           key="twitter:image"
-          name="twitter:image"
+          property="twitter:image"
           content={PlasmicPolitikaPrivatnosti.pageMetadata.ogImageSrc}
         />
       </Head>
