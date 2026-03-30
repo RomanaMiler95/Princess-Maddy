@@ -634,7 +634,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageZabavaUzMaloCarolijePng.png",
+                    src: "/plasmic/princess_maddy/images/imageZabavaUzMaloCarolije2Webp.webp",
                     fullWidth: 2022,
                     fullHeight: 1889,
                     aspectRatio: undefined
@@ -2551,9 +2551,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew7Webp.webp",
-                    fullWidth: 1499,
-                    fullHeight: 1997,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew15Webp.webp",
+                    fullWidth: 1175,
+                    fullHeight: 1998,
                     aspectRatio: undefined
                   }}
                 />
@@ -2574,8 +2574,8 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew8Webp.webp",
-                    fullWidth: 1694,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew17Png.png",
+                    fullWidth: 1695,
                     fullHeight: 1998,
                     aspectRatio: undefined
                   }}
@@ -2596,8 +2596,8 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew18Webp.webp",
-                    fullWidth: 1695,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew9Webp.webp",
+                    fullWidth: 1888,
                     fullHeight: 1998,
                     aspectRatio: undefined
                   }}
@@ -2619,9 +2619,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew2Webp.webp",
-                    fullWidth: 1617,
-                    fullHeight: 1769,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew11Webp.webp",
+                    fullWidth: 1695,
+                    fullHeight: 1998,
                     aspectRatio: undefined
                   }}
                 />
@@ -2666,9 +2666,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew11Webp.webp",
-                    fullWidth: 1695,
-                    fullHeight: 1998,
+                    src: "/plasmic/princess_maddy/images/galerijaImage4Webp.webp",
+                    fullWidth: 1125,
+                    fullHeight: 2000,
                     aspectRatio: undefined
                   }}
                 />
@@ -2688,9 +2688,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew10Webp2.webp",
-                    fullWidth: 1695,
-                    fullHeight: 1998,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew2Webp.webp",
+                    fullWidth: 1617,
+                    fullHeight: 1769,
                     aspectRatio: undefined
                   }}
                 />
@@ -2711,8 +2711,8 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew9Webp.webp",
-                    fullWidth: 1888,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew18Webp.webp",
+                    fullWidth: 1695,
                     fullHeight: 1998,
                     aspectRatio: undefined
                   }}
@@ -2733,7 +2733,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage4Webp.webp",
+                    src: "/plasmic/princess_maddy/images/galerijaImage5Webp.webp",
                     fullWidth: 1125,
                     fullHeight: 2000,
                     aspectRatio: undefined
@@ -2760,128 +2760,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew16Webp.webp",
-                    fullWidth: 1215,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew19Webp.webp",
+                    fullWidth: 1694,
                     fullHeight: 1998,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-            </div>
-            <div className={classNames(projectcss.all, sty.freeBox__g9QmJ)}>
-              <div className={classNames(projectcss.all, sty.freeBox___5YwEk)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__jyDg4)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "286px"
-                      : hasVariant(globalVariants, "screen", "tablet")
-                        ? "824px"
-                        : hasVariant(globalVariants, "screen", "smallDesktop")
-                          ? "840px"
-                          : "880px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew15Webp.webp",
-                    fullWidth: 1175,
-                    fullHeight: 1998,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__w1DDx)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__gnGb9)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "135px"
-                      : "400px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage7Webp.webp",
-                    fullWidth: 1500,
-                    fullHeight: 2000,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__gLjxn)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "135px"
-                      : "400px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew10Webp.webp",
-                    fullWidth: 1695,
-                    fullHeight: 1998,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-              <div className={classNames(projectcss.all, sty.freeBox__aImV)}>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__k9Y8Y)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "135px"
-                      : "400px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew17Webp.webp",
-                    fullWidth: 1695,
-                    fullHeight: 1998,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__qyaX4)}
-                  displayHeight={
-                    hasVariant(globalVariants, "screen", "mobile")
-                      ? "135px"
-                      : "400px"
-                  }
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"100%"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage5Webp.webp",
-                    fullWidth: 1125,
-                    fullHeight: 2000,
                     aspectRatio: undefined
                   }}
                 />

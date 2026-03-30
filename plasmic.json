@@ -1009,8 +1009,8 @@
         },
         {
           "id": "-dycCDvzNjTr",
-          "name": "image-zabava-uz-malo-carolije.png",
-          "filePath": "../public/plasmic/princess_maddy/images/imageZabavaUzMaloCarolijePng.png"
+          "name": "image-zabava-uz-malo-carolije-2.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageZabavaUzMaloCarolije2Webp.webp"
         },
         {
           "id": "HsGucfuMFXSz",
@@ -1066,6 +1066,16 @@
           "id": "wnoX2UsJIMxM",
           "name": "image-galerija-new-17.webp",
           "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew17Webp.webp"
+        },
+        {
+          "id": "AC2rrP7A0-ad",
+          "name": "image-galerija-new-17.png",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew17Png.png"
+        },
+        {
+          "id": "AaYZ6xmLtQaV",
+          "name": "image-galerija-new-19.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew19Webp.webp"
         }
       ],
       "indirect": false,
