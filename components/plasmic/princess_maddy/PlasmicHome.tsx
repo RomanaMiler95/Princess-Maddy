@@ -2688,9 +2688,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew2Webp.webp",
-                    fullWidth: 1617,
-                    fullHeight: 1769,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew8Webp.webp",
+                    fullWidth: 1694,
+                    fullHeight: 1998,
                     aspectRatio: undefined
                   }}
                 />

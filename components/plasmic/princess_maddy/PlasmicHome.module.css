@@ -6055,14 +6055,14 @@
   width: 100%;
   max-width: 100%;
   object-fit: cover;
-  object-position: 50% -71px;
+  object-position: 50% -30px;
   min-width: 0;
   flex-shrink: 0;
   border-radius: 30px;
 }
 .img__puPW > picture > img {
   object-fit: cover;
-  object-position: 50% -71px;
+  object-position: 50% -30px;
 }
 @media (max-width: 1919px) {
   .img__puPW {
