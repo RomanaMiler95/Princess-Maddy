@@ -421,7 +421,8 @@
       ],
       "customFunctions": [],
       "styleTokensProviderFilePath": "plasmic/antd_5_hostless/PlasmicStyleTokensProvider.tsx",
-      "projectModuleFilePath": "plasmic/antd_5_hostless/plasmic.tsx"
+      "projectModuleFilePath": "plasmic/antd_5_hostless/plasmic.tsx",
+      "dataTokensFilePath": ""
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -481,7 +482,8 @@
       ],
       "customFunctions": [],
       "styleTokensProviderFilePath": "plasmic/plasmic_basic_components/PlasmicStyleTokensProvider.tsx",
-      "projectModuleFilePath": "plasmic/plasmic_basic_components/plasmic.tsx"
+      "projectModuleFilePath": "plasmic/plasmic_basic_components/plasmic.tsx",
+      "dataTokensFilePath": ""
     },
     {
       "projectId": "8PtdGodUbexNYgkuyBUcWu",
@@ -505,7 +507,8 @@
       ],
       "customFunctions": [],
       "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.tsx",
-      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx"
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx",
+      "dataTokensFilePath": ""
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -529,7 +532,8 @@
       ],
       "customFunctions": [],
       "styleTokensProviderFilePath": "plasmic/plasmic_nav/PlasmicStyleTokensProvider.tsx",
-      "projectModuleFilePath": "plasmic/plasmic_nav/plasmic.tsx"
+      "projectModuleFilePath": "plasmic/plasmic_nav/plasmic.tsx",
+      "dataTokensFilePath": ""
     },
     {
       "projectId": "cYtFYdVtykXpyPSmJwBtNk",
@@ -1032,6 +1036,36 @@
           "id": "gVt18BXi3k-f",
           "name": "image-tema-gwen.webp",
           "filePath": "../public/plasmic/princess_maddy/images/imageTemaGwenWebp.webp"
+        },
+        {
+          "id": "AB8UbdUhsH4n",
+          "name": "image-galerija-new-16.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew16Webp.webp"
+        },
+        {
+          "id": "vcVJcnMvfLrq",
+          "name": "image-galerija-new-15.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew15Webp.webp"
+        },
+        {
+          "id": "NFsgQ6nZ2Bc8",
+          "name": "image-galerija-new-18.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew18Webp.webp"
+        },
+        {
+          "id": "Sq4ziIe0pveT",
+          "name": "image-galerija-new-11.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew11Webp.webp"
+        },
+        {
+          "id": "el0aRWVjZ-lT",
+          "name": "image-galerija-new-10.webp 2",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew10Webp2.webp"
+        },
+        {
+          "id": "wnoX2UsJIMxM",
+          "name": "image-galerija-new-17.webp",
+          "filePath": "../public/plasmic/princess_maddy/images/imageGalerijaNew17Webp.webp"
         }
       ],
       "indirect": false,
@@ -1053,7 +1087,8 @@
       ],
       "customFunctions": [],
       "styleTokensProviderFilePath": "plasmic/princess_maddy/PlasmicStyleTokensProvider.tsx",
-      "projectModuleFilePath": "plasmic/princess_maddy/plasmic.tsx"
+      "projectModuleFilePath": "plasmic/princess_maddy/plasmic.tsx",
+      "dataTokensFilePath": ""
     }
   ],
   "globalVariants": {
@@ -1077,6 +1112,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.353",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.353/dist/plasmic.schema.json"
+  "cliVersion": "0.1.359",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.359/dist/plasmic.schema.json"
 }

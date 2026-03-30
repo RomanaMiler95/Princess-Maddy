@@ -83,6 +83,54 @@ import Instagram3SvgIcon from "./icons/PlasmicIcon__Instagram3Svg"; // plasmic-i
 import TiktokSvgIcon from "./icons/PlasmicIcon__TiktokSvg"; // plasmic-import: TIFQAripOqvN/icon
 import Facebook3SvgIcon from "./icons/PlasmicIcon__Facebook3Svg"; // plasmic-import: RJ2yhi0BbV-9/icon
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export type PageCtx = {
+  pageRoute: string;
+  pagePath: string;
+  params: Record<string, string | string[] | undefined>;
+  query: Record<string, string | string[] | undefined>;
+};
+
+export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
+  return {
+    title: "Dječja animatorica - Princess Maddy",
+    description:
+      "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
+    openGraph: {
+      title: "Dječja animatorica - Princess Maddy",
+      description:
+        "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
+      images: [
+        "https://animatorica-princess-maddy.com/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+      title: "Dječja animatorica - Princess Maddy",
+      description:
+        "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
+      images: [
+        "https://animatorica-princess-maddy.com/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png"
+      ]
+    },
+    alternates: { canonical: "https://animatorica-princess-maddy.com" }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicHome__VariantMembers = {};
@@ -203,7 +251,7 @@ function PlasmicHome__RenderFunc(props: {
         path: "variable",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => ""
       }
     ],
     [$props, $ctx, $refs]
@@ -212,8 +260,14 @@ function PlasmicHome__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
+    $q: {},
     $refs
   });
+
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx as PageCtx
+  );
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -221,43 +275,39 @@ function PlasmicHome__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <title key="title">{PlasmicHome.pageMetadata.title}</title>
-        <meta
-          key="og:title"
-          property="og:title"
-          content={PlasmicHome.pageMetadata.title}
-        />
+        <title key="title">{pageMetadata.title}</title>
+        <meta key="og:title" property="og:title" content={pageMetadata.title} />
         <meta
           key="twitter:title"
           property="twitter:title"
-          content={PlasmicHome.pageMetadata.title}
+          content={pageMetadata.title}
         />
         <meta
           key="description"
           property="description"
-          content={PlasmicHome.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="og:description"
           property="og:description"
-          content={PlasmicHome.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="twitter:description"
           property="twitter:description"
-          content={PlasmicHome.pageMetadata.description}
+          content={pageMetadata.description}
         />
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicHome.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
           property="twitter:image"
-          content={PlasmicHome.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
-        <link rel="canonical" href={PlasmicHome.pageMetadata.canonical} />
+        <link rel="canonical" href={pageMetadata.alternates?.canonical} />
       </Head>
 
       <style>{`
@@ -298,6 +348,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                   component={Link}
                   href={`/`}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   <PlasmicImg__
@@ -356,6 +407,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                   component={Link}
                   href={"#contact"}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {"Kontakt"}
@@ -544,6 +596,7 @@ function PlasmicHome__RenderFunc(props: {
                         )}
                         component={Link}
                         href={"#paketi"}
+                        legacyBehavior={false}
                         platform={"nextjs"}
                       >
                         <React.Fragment>
@@ -1477,7 +1530,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"+0,65\u20ac\u00a0po kilometru"}
+                    {"+0,78\u20ac\u00a0po kilometru"}
                   </span>
                   <React.Fragment>
                     {"\u00a0na odabrani paket cijene."}
@@ -1517,7 +1570,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"+0,65\u20ac"}
+                    {"+0,78\u20ac"}
                   </span>
                   <React.Fragment> </React.Fragment>
                   <span
@@ -1567,7 +1620,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__m3SwJ
                     )}
                   >
-                    {"30\u20ac"}
+                    {"45\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -1762,7 +1815,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__okmPd
                     )}
                   >
-                    {"50\u20ac"}
+                    {"70\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -1984,7 +2037,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__mxfIf
                     )}
                   >
-                    {"80\u20ac"}
+                    {"105\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -2229,7 +2282,7 @@ function PlasmicHome__RenderFunc(props: {
                       sty.text__hN7FQ
                     )}
                   >
-                    {"120\u20ac"}
+                    {"160\u20ac"}
                   </div>
                   <div
                     className={classNames(
@@ -2543,9 +2596,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage4Webp.webp",
-                    fullWidth: 1125,
-                    fullHeight: 2000,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew18Webp.webp",
+                    fullWidth: 1695,
+                    fullHeight: 1998,
                     aspectRatio: undefined
                   }}
                 />
@@ -2613,9 +2666,9 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage7Webp.webp",
-                    fullWidth: 1500,
-                    fullHeight: 2000,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew11Webp.webp",
+                    fullWidth: 1695,
+                    fullHeight: 1998,
                     aspectRatio: undefined
                   }}
                 />
@@ -2635,7 +2688,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew10Webp.webp",
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew10Webp2.webp",
                     fullWidth: 1695,
                     fullHeight: 1998,
                     aspectRatio: undefined
@@ -2680,7 +2733,7 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/galerijaImage5Webp.webp",
+                    src: "/plasmic/princess_maddy/images/galerijaImage4Webp.webp",
                     fullWidth: 1125,
                     fullHeight: 2000,
                     aspectRatio: undefined
@@ -2707,9 +2760,128 @@ function PlasmicHome__RenderFunc(props: {
                   displayWidth={"100%"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/princess_maddy/images/imageGalerijaNew1Webp.webp",
-                    fullWidth: 2793,
-                    fullHeight: 3709,
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew16Webp.webp",
+                    fullWidth: 1215,
+                    fullHeight: 1998,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox__g9QmJ)}>
+              <div className={classNames(projectcss.all, sty.freeBox___5YwEk)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__jyDg4)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "286px"
+                      : hasVariant(globalVariants, "screen", "tablet")
+                        ? "824px"
+                        : hasVariant(globalVariants, "screen", "smallDesktop")
+                          ? "840px"
+                          : "880px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew15Webp.webp",
+                    fullWidth: 1175,
+                    fullHeight: 1998,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__w1DDx)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gnGb9)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "135px"
+                      : "400px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/galerijaImage7Webp.webp",
+                    fullWidth: 1500,
+                    fullHeight: 2000,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gLjxn)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "135px"
+                      : "400px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew10Webp.webp",
+                    fullWidth: 1695,
+                    fullHeight: 1998,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__aImV)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__k9Y8Y)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "135px"
+                      : "400px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/imageGalerijaNew17Webp.webp",
+                    fullWidth: 1695,
+                    fullHeight: 1998,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__qyaX4)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? "135px"
+                      : "400px"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"100%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/princess_maddy/images/galerijaImage5Webp.webp",
+                    fullWidth: 1125,
+                    fullHeight: 2000,
                     aspectRatio: undefined
                   }}
                 />
@@ -2974,6 +3146,7 @@ function PlasmicHome__RenderFunc(props: {
                       )}
                       component={Link}
                       href={"mailto:info@animatorica-princess-maddy.com"}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -3005,6 +3178,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                   component={Link}
                   href={`/impressum`}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -3022,6 +3196,7 @@ function PlasmicHome__RenderFunc(props: {
                   )}
                   component={Link}
                   href={`/politika-privatnosti`}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -3051,6 +3226,7 @@ function PlasmicHome__RenderFunc(props: {
                     href={
                       "https://www.instagram.com/princess____maddy?igsh=MW16NHV2cG01MDc1aA=="
                     }
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -3067,6 +3243,7 @@ function PlasmicHome__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.tiktok.com/@partyprincessmaddy"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -3083,6 +3260,7 @@ function PlasmicHome__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.facebook.com/share/16HpvQNQiQ/"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -3523,15 +3701,12 @@ export const PlasmicHome = Object.assign(
     // Key-value metadata
     metadata: { ogType: "website" },
 
-    // Page metadata
-    pageMetadata: {
-      title: "Dječja animatorica - Princess Maddy",
-      description:
-        "Tražite savršenu zabavu za svoju djevojčicu koja \nsanja o tome da bude ledena kraljica ili sirena? \nTu sam da ostvarim njezine snove!",
-      ogImageSrc:
-        "https://animatorica-princess-maddy.com/plasmic/princess_maddy/images/animatoricaPrincessMaddyGraphImagePng.png",
-      canonical: "https://animatorica-princess-maddy.com"
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pageRoute: "/",
+      pagePath: "/",
+      params: {},
+      query: {}
+    })
   }
 );
 

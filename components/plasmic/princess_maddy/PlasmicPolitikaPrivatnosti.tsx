@@ -74,6 +74,45 @@ import Instagram3SvgIcon from "./icons/PlasmicIcon__Instagram3Svg"; // plasmic-i
 import TiktokSvgIcon from "./icons/PlasmicIcon__TiktokSvg"; // plasmic-import: TIFQAripOqvN/icon
 import Facebook3SvgIcon from "./icons/PlasmicIcon__Facebook3Svg"; // plasmic-import: RJ2yhi0BbV-9/icon
 
+const emptyProxy: any = new Proxy(() => "", {
+  get(_, prop) {
+    return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
+  }
+});
+
+function wrapQueriesWithLoadingProxy($q: any): any {
+  return new Proxy($q, {
+    get(target, queryName) {
+      const query = target[queryName];
+      return !query || query.isLoading || !query.data ? emptyProxy : query;
+    }
+  });
+}
+
+export type PageCtx = {
+  pageRoute: string;
+  pagePath: string;
+  params: Record<string, string | string[] | undefined>;
+  query: Record<string, string | string[] | undefined>;
+};
+
+export function generateDynamicMetadata($q: any, $ctx: PageCtx) {
+  return {
+    openGraph: {
+      images: [
+        "https://site-assets.plasmic.app/55796a72fd35e79b84ffe58834002fa4.png"
+      ]
+    },
+    twitter: {
+      card: "summary_large_image" as const,
+
+      images: [
+        "https://site-assets.plasmic.app/55796a72fd35e79b84ffe58834002fa4.png"
+      ]
+    }
+  };
+}
+
 createPlasmicElementProxy;
 
 export type PlasmicPolitikaPrivatnosti__VariantMembers = {};
@@ -141,6 +180,11 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
 
   const globalVariants = _useGlobalVariants();
 
+  const pageMetadata = generateDynamicMetadata(
+    wrapQueriesWithLoadingProxy({}),
+    $ctx as PageCtx
+  );
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -151,12 +195,12 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
         <meta
           key="og:image"
           property="og:image"
-          content={PlasmicPolitikaPrivatnosti.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
         <meta
           key="twitter:image"
           property="twitter:image"
-          content={PlasmicPolitikaPrivatnosti.pageMetadata.ogImageSrc}
+          content={pageMetadata.ogImageSrc}
         />
       </Head>
 
@@ -193,6 +237,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                 )}
                 component={Link}
                 href={`/`}
+                legacyBehavior={false}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -242,6 +287,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                 )}
                 component={Link}
                 href={`/`}
+                legacyBehavior={false}
                 platform={"nextjs"}
               >
                 {"Naslovnica"}
@@ -526,6 +572,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                       )}
                       component={Link}
                       href={"mailto:info@animatorica-princess-maddy.com"}
+                      legacyBehavior={false}
                       platform={"nextjs"}
                     >
                       {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -557,6 +604,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                   )}
                   component={Link}
                   href={`/impressum`}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -574,6 +622,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                   )}
                   component={Link}
                   href={`/politika-privatnosti`}
+                  legacyBehavior={false}
                   platform={"nextjs"}
                 >
                   {hasVariant(globalVariants, "screen", "smallDesktop")
@@ -607,6 +656,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                     href={
                       "https://www.instagram.com/princess____maddy?igsh=MW16NHV2cG01MDc1aA=="
                     }
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -623,6 +673,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.tiktok.com/@partyprincessmaddy"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -639,6 +690,7 @@ function PlasmicPolitikaPrivatnosti__RenderFunc(props: {
                     )}
                     component={Link}
                     href={"https://www.facebook.com/share/16HpvQNQiQ/"}
+                    legacyBehavior={false}
                     platform={"nextjs"}
                     target={"_blank"}
                   >
@@ -785,14 +837,12 @@ export const PlasmicPolitikaPrivatnosti = Object.assign(
     internalVariantProps: PlasmicPolitikaPrivatnosti__VariantProps,
     internalArgProps: PlasmicPolitikaPrivatnosti__ArgProps,
 
-    // Page metadata
-    pageMetadata: {
-      title: "",
-      description: "",
-      ogImageSrc:
-        "https://site-assets.plasmic.app/55796a72fd35e79b84ffe58834002fa4.png",
-      canonical: ""
-    }
+    pageMetadata: generateDynamicMetadata(wrapQueriesWithLoadingProxy({}), {
+      pageRoute: "/politika-privatnosti",
+      pagePath: "/politika-privatnosti",
+      params: {},
+      query: {}
+    })
   }
 );
 
